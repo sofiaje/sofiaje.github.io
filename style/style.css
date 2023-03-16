@@ -168,6 +168,11 @@ button {
     padding: 1rem 3rem;
   }
 }
+@media (width >= 992px) {
+  #contentWrapper {
+    margin-top: 3rem;
+  }
+}
 
 .firstPageWrapper {
   display: flex;

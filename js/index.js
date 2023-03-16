@@ -4,26 +4,47 @@ let portfolioBtn = document.getElementById("portfolioBtn");
 let cvBtn = document.getElementById("cvBtn");
 let contactBtn = document.getElementById("contactBtn");
 
+//--------------------------- menu ---------------------------------------------------------------------------------
 
-console.log(jobs);
+
+const primaryNav = document.querySelector(".primary-nav");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+const icon = document.querySelector(".h-menu");
+
+navToggle.addEventListener("click", () => {
+    const visibility = primaryNav.getAttribute("data-visible");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-xmark");
+
+    if (visibility === "false") {
+        primaryNav.setAttribute("data-visible", true)
+        navToggle.setAttribute("aria-expanded", true)
+    } else if (visibility === "true") {
+        primaryNav.setAttribute("data-visible", false)
+        navToggle.setAttribute("aria-expanded", false)
+    }
+})
+
+function closeMenu() {
+    primaryNav.setAttribute("data-visible", false)
+    navToggle.setAttribute("aria-expanded", false)
+}
+
+
+
+
+//--------------------------- home page ---------------------------------------------------------------------------------
+
 
 function loadPage() {
     contentWrapper.innerHTML = `
     <div class="firstPageWrapper">
-        
         <img src="assets/mebe.png" class="portrait" alt="">
         <div class="textSection"><h1 class="first-page-heading">Frontend<br>developer</h1>
         <p class="subheading">Kreativ och nyfiken frontend student baserad i Stockholm. OBS! Sidan är under uppbyggnad. Bear with me!</p></div>
-  
-    </div>
-    
-    `
-
-
+    </div>`
 }
 
-
-//--------------------------- home page ---------------------------------------------------------------------------------
 
 homeBtn.addEventListener("click", () => {
     closeMenu();
@@ -42,7 +63,7 @@ portfolioBtn.addEventListener("click", () => {
         <a href="https://sofiaje.github.io/project/" target="_blank"><div class="projects">Knuten keramikverkstad</div></a>
         <a href="https://stormstina.github.io/my-lists/" target="_blank"><div class="projects">Gruppprojekt shoppinglista</div></a>
         <a href="#"><div class="projects" target="_blank">Tamagotchi</div></a>
-        <a href="https://sofiaje.github.io/activities/" target="_blank"><div class="projects">Bored? Use this activity generator</div></a>
+        <a href="https://sofiaje.github.io/activities/" target="_blank"><div class="projects">Activity generator</div></a>
     </div>
     
     `
