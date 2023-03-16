@@ -1,23 +1,66 @@
-* {
+p {
   font-family: "Nunito", sans-serif;
-  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #CCCCCC;
 }
 
 h1, h2, h3, h4, h5 {
-  color: white;
+  color: #CCCCCC;
   padding: 0.5rem 0;
 }
 
-h1 {
+h1, h2 {
+  font-family: "Italiana", serif;
   color: #14828B;
+  font-size: 1.8rem;
+}
+
+h1.first-page-heading {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+@media (width >= 768px) {
+  h1.first-page-heading {
+    font-size: 4.5rem;
+  }
+}
+@media (width >= 992px) {
+  h1.first-page-heading {
+    font-size: 6rem;
+  }
+}
+
+@media (width >= 992px) {
+  p.subheading {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
 }
 
 a {
   font-family: "Montserrat", sans-serif;
+  color: #CCCCCC;
 }
 
 span.color {
   color: #14828B;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: small;
+}
+
+footer p {
+  font-size: small;
+}
+footer h1 {
+  font-size: 1rem;
 }
 
 button {
@@ -27,6 +70,7 @@ button {
 .secret-btn {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0);
+  color: #CCCCCC;
   border: none;
 }
 
@@ -46,7 +90,7 @@ button {
     inset: 0 0 0 0%;
     flex-direction: column;
     padding: min(10vh, 10rem);
-    background: hsla(0, 0%, 100%, 0.1);
+    background: hsla(0, 0%, 32%, 0.1);
     -webkit-backdrop-filter: blur(1rem);
             backdrop-filter: blur(1rem);
     transform: translateX(100%);
@@ -78,6 +122,7 @@ button {
 }
 
 #contentWrapper {
+  margin-top: 2rem;
   border: 1px solid #002B35;
   flex-grow: 1;
   width: 100%;
