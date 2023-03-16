@@ -26,22 +26,26 @@ h1.first-page-heading {
     font-size: 3rem;
   }
 }
-@media (width >= 576px) {
+@media (width >= 992px) {
   h1.first-page-heading {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
-@media (width >= 768px) {
+@media (width >= 1200px) {
   h1.first-page-heading {
     font-size: 6rem;
   }
 }
 
-@media (width >= 992px) {
+p.subheading {
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+}
+@media (width >= 1200px) {
   p.subheading {
+    font-size: 1rem;
     letter-spacing: 2px;
-    font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -108,10 +112,10 @@ button {
   .primary-nav {
     position: fixed;
     z-index: 1000;
-    inset: 0 0 0 0%;
+    inset: 0 0 0 20%;
     flex-direction: column;
     padding: min(10vh, 10rem);
-    background: hsla(0, 0%, 32%, 0.1);
+    background: hsla(0, 0%, 32%, 0.3);
     -webkit-backdrop-filter: blur(1rem);
             backdrop-filter: blur(1rem);
     transform: translateX(100%);
@@ -146,7 +150,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 2rem;
   border: 1px solid #002B35;
   flex-grow: 1;
   width: 100%;
@@ -161,7 +164,28 @@ button {
 }
 @media (width >= 576px) {
   #contentWrapper {
+    margin-top: 2rem;
     padding: 1rem 3rem;
+  }
+}
+
+.firstPageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (width >= 768px) {
+  .firstPageWrapper {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.firstPageWrapper .textSection {
+  max-width: 400px;
+}
+@media (width >= 1200px) {
+  .firstPageWrapper .textSection {
+    max-width: 500px;
   }
 }
 
@@ -183,11 +207,16 @@ button {
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   padding: 1rem;
-  width: 200px;
+  width: 150px;
   aspect-ratio: 1;
 }
 .projects:hover {
   background: hsla(0, 0%, 100%, 0.3);
+}
+@media (width >= 768px) {
+  .projects {
+    width: 200px;
+  }
 }
 
 header {
@@ -200,11 +229,11 @@ header #headWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 @media (width >= 576px) {
   header {
-    padding: 1rem;
+    padding: 0rem 1rem;
   }
 }
 
@@ -217,22 +246,22 @@ footer #footWrapper {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  align-items: center;
+  max-width: 1600px;
 }
-
 footer section {
   display: flex;
   flex-direction: column;
 }
 footer .iconSection {
   flex-direction: row;
-  align-items: flex-end;
 }
 
 .formcontainer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  filter: blur(0.2rem);
 }
 
 .formelement {
@@ -254,6 +283,29 @@ textarea {
   width: 100%;
   min-height: 300px;
   max-width: 600px;
+}
+
+img {
+  width: 100%;
+}
+
+.portrait {
+  display: flex;
+  align-self: center;
+  border-radius: 50%;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+@media (width >= 768px) {
+  .portrait {
+    margin-bottom: 0rem;
+    margin-right: 3rem;
+  }
+}
+@media (width >= 1200px) {
+  .portrait {
+    max-width: 330px;
+  }
 }
 
 * {

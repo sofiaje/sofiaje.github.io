@@ -1,10 +1,22 @@
-footer {
+footer{
+    border: 1px solid $border;
+
+    width: 100%;
+    padding: 1rem;
+    #footWrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1600px;
+    }
+
     section {
         display: flex;
         flex-direction: column;
     }
     .iconSection {
         flex-direction: row;
-        align-items: flex-end;
+        // align-items: flex-end;
     }
 }

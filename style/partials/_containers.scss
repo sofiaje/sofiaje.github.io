@@ -9,7 +9,6 @@
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 2rem;
     border: 1px solid $border;
     flex-grow: 1;
     width: 100%;
@@ -20,18 +19,40 @@
         align-items: flex-start;
     }
     @media ($sm){
+        margin-top: 2rem;
         padding: 1rem 3rem;
     }
 }
 
 
-//section
+// first page
+.firstPageWrapper {
+    display: flex;
+    flex-direction: column;
+    @media ($md){
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .textSection{
+        max-width: 400px;
+        
+        @media($xl){
+            max-width: 500px;
+        }
+    }
+}
+
+
+
+// section
 .textSection{
     max-width: 500px;
     margin-bottom: 3rem;
 }
 
-//project divs
+
+// project divs
 .project-container{
     display: flex;
     flex-wrap: wrap;
@@ -45,11 +66,14 @@
     backdrop-filter: blur(1rem);
 
     padding: 1rem;
-    width: 200px;
+    width: 150px;
     aspect-ratio: 1;
     &:hover {
         background: hsla(0, 0%, 100%, 0.3);
 
+    }
+    @media ($md) {
+        width: 200px;
     }
 }
 
@@ -63,22 +87,9 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
+        max-width: 1600px;
     }
     @media ($sm){
-        padding: 1rem;
-    }
-}
-
-footer{
-    border: 1px solid $border;
-
-    width: 100%;
-    padding: 1rem;
-    #footWrapper {
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
+        padding: 0rem 1rem;
     }
 }

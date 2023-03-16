@@ -29,19 +29,21 @@ h1.first-page-heading {
     @media ($xs) {
         font-size: 3rem;
     }
-    @media ($sm) {
-        font-size: 4.5rem;
+    @media ($lg) {
+        font-size: 4rem;
     }
-    @media ($md) {
+    @media ($xl) {
         font-size: 6rem;
     }
 }
 
 p.subheading {
-    @media ($lg) {
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    @media ($xl) {
+        font-size: 1rem;
         letter-spacing: 2px;
-        font-size: 1.2rem;
-        line-height: 2.5rem;
+        line-height: 2rem;
     }
 }
 

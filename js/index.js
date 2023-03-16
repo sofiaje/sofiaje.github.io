@@ -9,8 +9,15 @@ console.log(jobs);
 
 function loadPage() {
     contentWrapper.innerHTML = `
-        <div><h1 class="first-page-heading">Frontend<br>developer</h1>
-        <p class="subheading">Kreativ och nyfiken frontend student, baserad i Stockholm.</p></div>`
+    <div class="firstPageWrapper">
+        <img src="assets/mebe.png" class="portrait" alt="">
+        <div class="textSection"><h1 class="first-page-heading">Frontend<br>developer</h1>
+        <p class="subheading">Kreativ och nyfiken frontend student baserad i Stockholm. OBS! Sidan är under uppbyggnad.</p></div>
+    </div>
+    
+    `
+
+
 }
 
 
@@ -76,18 +83,18 @@ cvBtn.addEventListener("click", () => {
 contactBtn.addEventListener("click", () => {
     closeMenu();
     contentWrapper.innerHTML = `<h2>Kontakt</h2>
-    <section class="textSection"><p>Är du nyfiken på vem jag är och vill veta mer? Har du en idé som du vill ha hjälp med att realisera? 
-    Tveka inte att ta kontakt med mig, antingen via sofia.jespersen@hotmail.com eller via kontaktformuläret här nedan.</p></section>
+    <section class="textSection"><p>Är du nyfiken på vem jag är och vill veta mer? Har du en idé som du vill ha hjälp att realisera? 
+    Tveka inte att ta kontakt med mig via sofia.jespersen@hotmail.com (eller återkom om några dagar för att skåda ett tjusigt kontaktformulär nedan).</p></section>
 
     <div class="formcontainer">
-        <form action="">
-            <label for="name">Namn:</label><br>
+        <form id="mailForm">
+            <label for="name" required>Namn:</label><br>
             <input type="text" id="name" class="formelement"><br>
-            <label for="email">Email:</label><br>
+            <label for="email" required>Email:</label><br>
             <input type="text" id="email" class="formelement"><br>
-            <label for="textarea">Meddelande:</label><br>
+            <label for="textarea" required>Meddelande:</label><br>
             <textarea id="textarea" class="formelement"></textarea><br>
-            <button class="btn">Skicka</button>
+            <button class="btn" disabled>Skicka</button>
         </form>
     </div>`
 
