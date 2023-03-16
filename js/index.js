@@ -10,9 +10,11 @@ console.log(jobs);
 function loadPage() {
     contentWrapper.innerHTML = `
     <div class="firstPageWrapper">
+        
         <img src="assets/mebe.png" class="portrait" alt="">
         <div class="textSection"><h1 class="first-page-heading">Frontend<br>developer</h1>
-        <p class="subheading">Kreativ och nyfiken frontend student baserad i Stockholm. OBS! Sidan är under uppbyggnad.</p></div>
+        <p class="subheading">Kreativ och nyfiken frontend student baserad i Stockholm. OBS! Sidan är under uppbyggnad. Bear with me!</p></div>
+  
     </div>
     
     `

@@ -27,13 +27,13 @@ h1.first-page-heading {
     font-weight: 100;
     letter-spacing: 2px;
     @media ($xs) {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     @media ($lg) {
         font-size: 4rem;
     }
     @media ($xl) {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 }
 
