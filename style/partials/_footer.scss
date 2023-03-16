@@ -1,0 +1,11 @@
+footer {
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .iconSection {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}

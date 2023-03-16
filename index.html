@@ -9,19 +9,57 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/4d42e0c674.js" crossorigin="anonymous"></script>
 
+    <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Montserrat:wght@200;400&family=Nunito:wght@300&family=Quattrocento&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     
     <div id="pageWrapper">
-        <header>Header</header>
+
+        <header>
+            <div id="headWrapper">
+                <p>SOFIA <span class="color">JESPERSEN</span></p>
+                <button aria-controls="primary-nav" aria-expanded="true" class="mobile-nav-toggle secret-btn">
+                    <i class="fa-solid fa-bars fa-2xl" class=""></i>
+                    <span class="sr-only">Menu</span>
+                </button>
+                <nav>
+                    <ul id="primary-nav" data-visible="false" class="primary-nav">
+                        <li><button id="homeBtn" class="active-link secret-btn">Home</button></li>
+                        <li><button id="portfolioBtn" class="secret-btn">Portfolio</button></li>
+                        <li><button id="cvBtn" class="secret-btn">CV</button></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+
         <div id="contentWrapper">
-            <h1>Sofia jespersen</h1>
+            <h1>Sofia Jespersen</h1>
         </div>
-        <footer>Footer</footer>
+
+        <footer>
+            <div id="footWrapper">
+                <section>
+                    <h3>Info</h3>
+                    <p>sofia.jespersen@hotmail.com</p>
+                </section>
+                <section class="iconSection">
+                    <a href="" class="icon-link"><i class="fa-brands fa-github fa-lg"></i></a>
+                    <a href="" class="icon-link"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                </section>
+            </div>
+        </footer>
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

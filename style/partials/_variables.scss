@@ -4,8 +4,19 @@ $md: "width >= 768px";
 $lg: "width >= 992px";
 $xl: "width >= 1200px";
 
+$sm-reverse: "width <= 576px";
+
+
 //colors
 $p-white: white;
 $p-black: black;
+$invisible: rgb(0, 0, 0, 0);
 
-$bg-color: rgb(32, 69, 80);
+$bg-color: #002B35;
+
+$h-color: #14828B;
+
+
+//test border around containers, switch place to remove border
+$border: $p-white;
+$border: $bg-color;

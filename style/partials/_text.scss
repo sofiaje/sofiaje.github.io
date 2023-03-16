@@ -1,9 +1,20 @@
 * {
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- color: $p-white;
+    font-family: "Nunito", sans-serif;
+    color: $p-white;
 }
 
-h1, h2,h3,h4,h5 {
-    color:white;
+h1,h2,h3,h4,h5 {
+    color: $p-white;
     padding: 0.5rem 0;
+}
+h1 {
+    color: $h-color;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+}
+span.color {
+    color: $h-color;
+
 }
