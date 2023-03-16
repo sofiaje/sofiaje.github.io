@@ -1,36 +1,45 @@
-p {
-    font-family: "Nunito", sans-serif;
+* {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     line-height: 1.5rem;
     color: $text-color;
 }
 
+p {
+}
+
 //headings
 h1,h2,h3,h4,h5 {
     color: $text-color;
+    line-height: normal;
+
     padding: 0.5rem 0;
+    @media ($sm){
+        // font-size: 1.5em;
+    }
 }
 
 h1, h2 {
-    font-family: 'Italiana', serif;
     color: $h-color;
-    font-size: 1.8rem;
 }
 
 h1.first-page-heading {
+    font-family: 'Italiana', serif;
     text-transform:uppercase;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 100;
     letter-spacing: 2px;
-
-    @media ($md) {
+    @media ($xs) {
+        font-size: 3rem;
+    }
+    @media ($sm) {
         font-size: 4.5rem;
     }
-    @media ($lg) {
+    @media ($md) {
         font-size: 6rem;
     }
 }
+
 p.subheading {
     @media ($lg) {
         letter-spacing: 2px;
@@ -44,6 +53,7 @@ p.subheading {
 a {
     font-family: "Montserrat", sans-serif;
     color: $text-color;
+    text-decoration: none;
 }
 span.color {
     color: $h-color;
@@ -62,5 +72,14 @@ footer {
     h1 {
         font-size: 1rem;
     }
+}
+
+
+//form
+ul {
+}
+li {
+    list-style: none;
+    color: $text-color;
 }
 

@@ -1,5 +1,4 @@
-p {
-  font-family: "Nunito", sans-serif;
+* {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.5rem;
@@ -8,27 +7,31 @@ p {
 
 h1, h2, h3, h4, h5 {
   color: #CCCCCC;
+  line-height: normal;
   padding: 0.5rem 0;
 }
-
 h1, h2 {
-  font-family: "Italiana", serif;
   color: #14828B;
-  font-size: 1.8rem;
 }
 
 h1.first-page-heading {
+  font-family: "Italiana", serif;
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 100;
   letter-spacing: 2px;
 }
-@media (width >= 768px) {
+@media (width >= 375px) {
+  h1.first-page-heading {
+    font-size: 3rem;
+  }
+}
+@media (width >= 576px) {
   h1.first-page-heading {
     font-size: 4.5rem;
   }
 }
-@media (width >= 992px) {
+@media (width >= 768px) {
   h1.first-page-heading {
     font-size: 6rem;
   }
@@ -45,6 +48,7 @@ h1.first-page-heading {
 a {
   font-family: "Montserrat", sans-serif;
   color: #CCCCCC;
+  text-decoration: none;
 }
 
 span.color {
@@ -61,6 +65,11 @@ footer p {
 }
 footer h1 {
   font-size: 1rem;
+}
+
+li {
+  list-style: none;
+  color: #CCCCCC;
 }
 
 button {
@@ -122,12 +131,45 @@ button {
 }
 
 #contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 2rem;
   border: 1px solid #002B35;
   flex-grow: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 1rem 2rem;
+}
+@media (width >= 768px) {
+  #contentWrapper {
+    align-items: flex-start;
+  }
+}
+
+.textSection {
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  cursor: pointer;
+  background: hsla(0, 0%, 100%, 0.1);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  padding: 1rem;
+  width: 200px;
+  aspect-ratio: 1;
+}
+.projects:hover {
+  background: hsla(0, 0%, 100%, 0.3);
 }
 
 header {
@@ -140,7 +182,7 @@ header #headWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 footer {
@@ -152,7 +194,7 @@ footer #footWrapper {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 footer section {

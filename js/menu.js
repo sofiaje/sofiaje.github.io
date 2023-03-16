@@ -1,7 +1,6 @@
 const primaryNav = document.querySelector(".primary-nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const icon = document.querySelector(".fa-solid");
-console.log(primaryNav, navToggle, icon)
 
 navToggle.addEventListener("click", () => {
     const visibility = primaryNav.getAttribute("data-visible");
