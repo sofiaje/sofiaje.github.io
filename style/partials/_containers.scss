@@ -13,14 +13,16 @@
     border: 1px solid $border;
     flex-grow: 1;
     width: 100%;
-    max-width: 1000px;
-    padding: 1rem 2rem;
-    @media ($md){
+    max-width: 1200px;
+    padding: 1rem;
+    @media ($xs){
+        padding: 1rem 1.5rem;
         align-items: flex-start;
-
+    }
+    @media ($sm){
+        padding: 1rem 3rem;
     }
 }
-
 
 
 //section
@@ -55,13 +57,16 @@ header{
     border: 1px solid $border;
 
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     #headWrapper {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: 1200px;
+    }
+    @media ($sm){
+        padding: 1rem;
     }
 }
 

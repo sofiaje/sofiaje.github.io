@@ -1,6 +1,18 @@
 button {
     cursor: pointer;
 }
+.btn {
+    background-color: $accent-color;
+    color: $p-white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color:$accent-color-dark;
+
+    }
+}
 
 .secret-btn {
     padding: 1rem;

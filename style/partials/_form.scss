@@ -1,0 +1,24 @@
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.formelement {
+    margin-bottom: 1.3rem;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.3rem 1rem;
+    &:focus {
+        outline-color: rgb(218, 174, 0);
+    }
+}
+input {
+    max-width: 400px;
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    min-height: 300px;
+    max-width: 600px;
+
+}

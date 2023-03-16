@@ -10,7 +10,7 @@ console.log(jobs);
 function loadPage() {
     contentWrapper.innerHTML = `
         <div><h1 class="first-page-heading">Frontend<br>developer</h1>
-        <p class="subheading">Frontend student, based in Stockholm.</p></div>`
+        <p class="subheading">Kreativ och nyfiken frontend student, baserad i Stockholm.</p></div>`
 }
 
 
@@ -27,7 +27,7 @@ homeBtn.addEventListener("click", () => {
 portfolioBtn.addEventListener("click", () => {
     closeMenu();
     contentWrapper.innerHTML = `
-    <h2>School assigments</h2>
+    <section class="textSection"><h2>Skol projekt</h2><p>Här samsas lite större och lite mindre projekt från skolan.</p></section>
     <div class="project-container">
         <a href="https://sofiaje.github.io/star-wars" target="_blank"><div class="projects">Star wars trivia</div></a>
         <a href="https://sofiaje.github.io/project/" target="_blank"><div class="projects">Knuten keramikverkstad</div></a>
@@ -46,7 +46,7 @@ cvBtn.addEventListener("click", () => {
     closeMenu();
 
     contentWrapper.innerHTML = `
-    <section class="textSection"><h2>About</h2>
+    <section class="textSection"><h2>Om mig</h2>
     <p>It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
     sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
@@ -57,12 +57,12 @@ cvBtn.addEventListener("click", () => {
     into electronic typesetting, remaining essentially unchanged. 
     It was popularised in the 1960s.</p></section>
 
-    <section class="textSection"><h2>Worklife</h2>
+    <section class="textSection"><h2>Arbetslivserfarenhet</h2>
     <p>It has survived not only five centuries, but also the leap 
     into electronic typesetting, remaining essentially unchanged. 
     It was popularised in the 1960s.</p></section>
 
-    <section class="textSection"><h2>Education</h2>
+    <section class="textSection"><h2>Utbildning</h2>
     <p>It has survived not only five centuries, but also the leap 
     into electronic typesetting, remaining essentially unchanged. 
     It was popularised in the 1960s.</p></section>
@@ -75,7 +75,21 @@ cvBtn.addEventListener("click", () => {
 
 contactBtn.addEventListener("click", () => {
     closeMenu();
-    contentWrapper.innerHTML = `<h2>Contact comming soon</h2>`
+    contentWrapper.innerHTML = `<h2>Kontakt</h2>
+    <section class="textSection"><p>Är du nyfiken på vem jag är och vill veta mer? Har du en idé som du vill ha hjälp med att realisera? 
+    Tveka inte att ta kontakt med mig, antingen via sofia.jespersen@hotmail.com eller via kontaktformuläret här nedan.</p></section>
+
+    <div class="formcontainer">
+        <form action="">
+            <label for="name">Namn:</label><br>
+            <input type="text" id="name" class="formelement"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" class="formelement"><br>
+            <label for="textarea">Meddelande:</label><br>
+            <textarea id="textarea" class="formelement"></textarea><br>
+            <button class="btn">Skicka</button>
+        </form>
+    </div>`
 
 })
 
