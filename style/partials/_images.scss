@@ -2,7 +2,7 @@ img {
     width: 100%
 }
 .portrait {
-    display: flex;
+    @include flex();
     align-self: center;
     border-radius: 50%;
     max-width: 300px;

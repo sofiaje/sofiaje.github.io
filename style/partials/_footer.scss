@@ -6,18 +6,16 @@ footer{
     padding-top: 0;
     #footWrapper {
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         max-width: 1600px;
+        @include flex($justify: space-between, $align: center);
     }
 
     section {
-        display: flex;
-        flex-direction: column;
+
+        @include flex($direction: column)
     }
     .iconSection {
-        flex-direction: row;
-        // align-items: flex-end;
+        @include flex
+
     }
 }

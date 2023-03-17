@@ -1,11 +1,13 @@
 .formcontainer {
-    display: flex;
-    flex-direction: column;
+    @include flex($direction: column);
     width: 100%;
-    filter: blur(0.1rem);
 }
 
+label {
+    filter: blur(0.1rem);
+}
 .formelement {
+    filter: blur(0.1rem);
     margin-bottom: 1.3rem;
     background-color: transparent;
     border: 1px solid white;
@@ -14,6 +16,9 @@
     &:focus {
         outline-color: rgb(218, 174, 0);
     }
+}
+.formBtn {
+    filter: blur(0.1rem);
 }
 input {
     max-width: 400px;

@@ -8,6 +8,19 @@ $xl: "width >= 1200px";
 $sm-reverse: "width <= 576px";
 
 
+//flex mixin
+@mixin flex($direction:row, $justify:flex-start, $align:stretch, $wrap:no-wrap, $gap: 0px){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+
+
+
 //colors
 $p-white: white;
 $p-black: black;
@@ -26,3 +39,5 @@ $text-color: #CCCCCC;
 //test border around containers, switch place to remove border
 $border: $p-white;
 $border: $bg-color;
+
+
