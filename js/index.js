@@ -13,8 +13,8 @@ const icon = document.querySelector(".h-menu");
 
 navToggle.addEventListener("click", () => {
     const visibility = primaryNav.getAttribute("data-visible");
-    icon.classList.toggle("fa-bars");
-    icon.classList.toggle("fa-xmark");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
 
     if (visibility === "false") {
         primaryNav.setAttribute("data-visible", true)
@@ -57,7 +57,7 @@ homeBtn.addEventListener("click", () => {
 portfolioBtn.addEventListener("click", () => {
     closeMenu();
     contentWrapper.innerHTML = `
-    <section class="textSection"><h2>Skol projekt</h2><p>Här samsas lite större och lite mindre projekt från skolan.</p></section>
+    <section class="textSection"><h2>Skolprojekt</h2><p>Här samsas lite större och lite mindre projekt från skolan.</p></section>
     <div class="project-container">
         <a href="https://sofiaje.github.io/star-wars" target="_blank"><div class="projects">Star wars trivia</div></a>
         <a href="https://sofiaje.github.io/project/" target="_blank"><div class="projects">Knuten keramikverkstad</div></a>
@@ -83,9 +83,9 @@ cvBtn.addEventListener("click", () => {
     like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
     
     <section class="textSection"><h2>Skills</h2>
-    <p>It has survived not only five centuries, but also the leap 
-    into electronic typesetting, remaining essentially unchanged. 
-    It was popularised in the 1960s.</p></section>
+    <p>Adobe Illustrator, Adobe Photoshop</p>
+    <p>Agila arbetsprocesser, scrum</p>
+    <p>JS, HTML5, CSS/SCSS, Bootstrap, Bulma</p></section>
 
     <section class="textSection"><h2>Arbetslivserfarenhet</h2>
     <p>It has survived not only five centuries, but also the leap 
@@ -93,9 +93,11 @@ cvBtn.addEventListener("click", () => {
     It was popularised in the 1960s.</p></section>
 
     <section class="textSection"><h2>Utbildning</h2>
-    <p>It has survived not only five centuries, but also the leap 
-    into electronic typesetting, remaining essentially unchanged. 
-    It was popularised in the 1960s.</p></section>
+    <p>Relevant utbildning nedan. Är för tillfället student på Nackademin Yrkeshögskola. It has survived not only five centuries, but also the leap into electronic typesetting.</p></section>
+
+    <div class="flex">
+    <section class="textSection-small"><p>Frontend utveckling<br>Nackademin <br>2022 - nu</p><br><p>Tvååring utbildning som fokuserar främst på Javascript. Agila arbetsprocesser. Ungefär 25procent av utbildningen är LIA dvs lärande i arbetslivet.</p></section>
+    <section class="textSection-small"><p>Konst och design<br> St sigfrids folkhögskola <br>2016 - 2018</p><br><p>Tvåårig konstutbildning, inkluderade konst, grafisk design och . Andra året projekt år. </p></section></div>
     
     `
 })

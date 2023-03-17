@@ -1,3 +1,10 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 * {
   font-family: "Inter", sans-serif;
   font-weight: 300;
@@ -126,13 +133,15 @@ button {
   }
   .mobile-nav-toggle {
     display: inherit;
-    position: absolute;
+    padding: 0.5rem;
+    position: fixed;
     aspect-ratio: 1;
     border: none;
     z-index: 9999;
     background-color: transparent;
     color: white;
     right: 0rem;
+    top: 0rem;
   }
 }
 .icon-link {
@@ -147,6 +156,7 @@ button {
 }
 
 #contentWrapper {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -200,7 +210,15 @@ button {
   margin-bottom: 3rem;
 }
 
-.project-container {
+.textSection-small {
+  padding: 1rem;
+  max-width: 300px;
+  margin-bottom: 3rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+}
+
+div.project-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -210,8 +228,6 @@ button {
 .projects {
   cursor: pointer;
   background: hsla(0, 0%, 100%, 0.1);
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
   padding: 1rem;
   width: 150px;
   aspect-ratio: 1;
@@ -226,7 +242,9 @@ button {
 }
 
 header {
+  background-color: #002B35;
   border: 1px solid #002B35;
+  position: fixed;
   width: 100%;
   padding: 0.5rem;
 }
@@ -275,6 +293,7 @@ footer .iconSection {
   margin-bottom: 1.3rem;
   background-color: transparent;
   border: 1px solid white;
+  border-radius: 4px;
   padding: 0.3rem 1rem;
 }
 .formelement:focus {
