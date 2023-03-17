@@ -9,12 +9,9 @@ let contactBtn = document.getElementById("contactBtn");
 
 const primaryNav = document.querySelector(".primary-nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
-const icon = document.querySelector(".h-menu");
 
 navToggle.addEventListener("click", () => {
     const visibility = primaryNav.getAttribute("data-visible");
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-xmark");
 
     if (visibility === "false") {
         primaryNav.setAttribute("data-visible", true)
@@ -76,28 +73,63 @@ cvBtn.addEventListener("click", () => {
     closeMenu();
 
     contentWrapper.innerHTML = `
-    <section class="textSection"><h2>Om mig</h2>
-    <p>It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-    like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
+    <div class="">
+        <section class="textSection">
+            <h2>Om mig</h2>
+            <p>En positiv, ansvarstagande och nyfiken människa med ett stort intresse för kommunikation och problemlösning.<br><br>Jag utbildar mig till frontend utvecklare då jag vill ha ett kreativt jobb med möjlighet till utveckling, 
+            uppåt och åt sidorna, men framförallt kunskapsmässigt då det känns viktigt att behålla nyfikenheten inför arbetet och att få känna sig stimulerad i sin vardag. <br><br>
+            Mitt intresse för kod startade i början av 2000-talet med olika sociala communitys där man hade egna sidor att jobba med. Verktygen var då ganska begränsande men det fanns en utmaning i det som 
+            lockade mig. Jag uppskattar det direkta i kodskrivandet, att resultaten kommer snabbt men också att det finns hundra sätt att skriva en kod på, man får göra sin egen grej!</p>
+        </section>
     
-    <section class="textSection"><h2>Skills</h2>
-    <p>Adobe Illustrator, Adobe Photoshop</p>
-    <p>Agila arbetsprocesser, scrum</p>
-    <p>JS, HTML5, CSS/SCSS, Bootstrap, Bulma</p></section>
+        <section class="textSection">
+            <h2>Skills</h2>
+            <p>Adobe Illustrator, Adobe Photoshop</p>
+            <p>Agila arbetsprocesser, scrum</p>
+            <p>JS, HTML5, CSS/SCSS, Bootstrap, Bulma</p>
+        </section>
 
-    <section class="textSection"><h2>Arbetslivserfarenhet</h2>
-    <p>It has survived not only five centuries, but also the leap 
-    into electronic typesetting, remaining essentially unchanged. 
-    It was popularised in the 1960s.</p></section>
+        <section class="textSection">
+            <h2>Arbetslivserfarenhet</h2>
+            <p>Jag har spenderat större delen av mitt arbetsliv inom handels, på företag som ICA och Plantagen men främst på IKEA där jag också jobbar helger för tillfället.<br><br>
+            På IKEA har jag testat på många olika avdelningar så som kassa, logistik och lekrum men mest har jag varit på kundservice. 
+            Här får jag använda färdigheter som jag också tror kan komma till nytta i mitt framtida yrke som utvecklare. 
+            Det handlar i stort om god kommunikation, beslutsfattande samt problemlösning då man ofta behöver vara kreativ för att i samråd med 
+            kund komma fram till den bästa lösningen för båda parter!</p>
+        </section>
 
-    <section class="textSection"><h2>Utbildning</h2>
-    <p>Relevant utbildning nedan. Är för tillfället student på Nackademin Yrkeshögskola. It has survived not only five centuries, but also the leap into electronic typesetting.</p></section>
+        <section class="textSection">
+            <h2>Utbildning</h2>
+            <p>Jag går för tillfället mitt första år som student på Frontend programmet på Nackademin Yrkeshögskola i Solna, en utbildning som jag trivs väldigt bra på.</p>
+        </section>
 
-    <div class="flex">
-    <section class="textSection-small"><p>Frontend utveckling<br>Nackademin <br>2022 - nu</p><br><p>Tvååring utbildning som fokuserar främst på Javascript. Agila arbetsprocesser. Ungefär 25procent av utbildningen är LIA dvs lärande i arbetslivet.</p></section>
-    <section class="textSection-small"><p>Konst och design<br> St sigfrids folkhögskola <br>2016 - 2018</p><br><p>Tvåårig konstutbildning, inkluderade konst, grafisk design och . Andra året projekt år. </p></section></div>
+        <div class="flex">
+            <section class="textSection-small">
+                <p>Frontend utveckling<br>
+                Nackademin <br>
+                2022 - nu</p><br>
+                <p>Tvååring utbildning som fokuserar främst på Javascript. Vi har jobbat med projektmetodik så som agila arbetsprocesser och scrum. 
+                Ungefär 25procent av utbildningen är förlagd till LIA dvs lärande i arbete som genomförs på plats på ett företag. Min LIA startar i november 2023.</p>
+            </section>
+
+            <section class="textSection-small">
+                <p>Konst och design<br>
+                St sigfrids folkhögskola <br>
+                2016 - 2018</p><br>
+                <p>Tvåårig konstutbildning som inkluderar konst, illustration och grafisk design där första året var ett allmänt år där man 
+                fick prova på lite olika tekniker samt bygga upp en grundkunskap i färglära, komposition och skissteknik, medan andra året var 
+                mer inriktat och uppbyggt kring olika projekt. </p>
+            </section>
+
+            <section class="textSection-small">
+            <p>Relevanta kurser</p><br>
+            <p>Kulturjournalistik och Kulturkritik<br>Svenska filminstitutet vid Stockholms Universitet</p><br>
+            <p>Digital grafik och Illustration<br>Södertörns Högskola Stockholm</p>
+            </section>
+        </div>
+    
+
+    </div>
     
     `
 })

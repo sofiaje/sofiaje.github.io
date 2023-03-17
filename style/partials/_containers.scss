@@ -6,7 +6,7 @@
 }
 
 #contentWrapper {
-    margin-top: 100px;
+    margin-top:60px;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,12 +20,10 @@
         align-items: flex-start;
     }
     @media ($sm){
-        margin-top: 2rem;
         padding: 1rem 3rem;
     }
-    @media ($lg) {
-        margin-top: 3rem;
-        
+    @media ($xl){
+        margin-top: 10%;
     }
 }
 
@@ -54,16 +52,17 @@
 // section
 .textSection{
     max-width: 500px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .textSection-small{
+    background: hsla(0, 0%, 100%, 0.1);
     padding: 1rem;
-    max-width: 300px;
-    margin-bottom: 3rem;
-    border: 1px solid $text-color;
+    width: 100%;
     border-radius: 4px;
-    // background: hsla(0, 0%, 100%, 0.1);
-    // backdrop-filter: blur(1rem);
+    @media ($md) {
+        max-width: 310px;
+
+    }
 }
 
 
@@ -73,23 +72,9 @@ div.project-container{
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 2rem;
-    // background-color: $accent-color-dark;
-    // padding: 1rem;
 }
 
-// .project-container::before {
-//     top: 0px;
-//     transform: skewY(-4deg);
-//     transform-origin: 0% 0px;
-//     background: inherit;
-//     content: "";
-//     display: block;
-//     height: 30%;
-//     left: 0px;
-//     position: absolute;
-//     right: 0px;
-//     z-index: -1;
-// }
+
 
 .projects {
     cursor: pointer;
