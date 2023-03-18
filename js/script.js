@@ -53,8 +53,7 @@ cvBtn.addEventListener("click", () => {
 
         <section class="textSection">
             <h2>Om mig</h2>
-            <p>En positiv, ansvarstagande och nyfiken människa med ett stort intresse för kommunikation och problemlösning.<br>Jag har valt att utbilda mig till frontend utvecklare då jag vill ha ett kreativt jobb med möjlighet till utveckling, 
-            uppåt och åt sidorna, men framförallt kunskapsmässigt då det känns viktigt att behålla upptäckarlusten och att få känna sig stimulerad i sin vardag. <br><br>
+            <p>En positiv, ansvarstagande och nyfiken människa med ett stort intresse för kommunikation och problemlösning.<br><br>
             Mitt intresse för kod startade i början av 2000-talet med olika sociala communitys där man hade egna sidor att jobba med. Verktygen var då ganska begränsande men det fanns en utmaning i det som 
             lockade mig. Jag uppskattar det direkta i kodskrivandet - att resultaten kommer snabbt men också att det finns hundra sätt att skriva en kod på, man får göra sin egen grej!</p>
         </section>
@@ -62,7 +61,7 @@ cvBtn.addEventListener("click", () => {
         <section class="textSection">
             <h2>Arbetslivserfarenhet</h2>
             <p>Jag har spenderat större delen av mitt arbetsliv inom handels, på företag som ICA och Plantagen men främst på IKEA där jag också jobbar extra under utbildningen.<br><br>
-            På IKEA har jag testat på många olika avdelningar så som kassa, logistik och lekrum men mest har jag varit på kundservice. 
+            Genom åren har jag testat på det mesta inom området så som kassa, varuinköp, logistik och lekrum men mest har jag varit på kundservice. 
             Här får jag använda färdigheter som jag också tror kan komma till nytta i mitt framtida yrke som utvecklare. 
             Det handlar i stort om god kommunikation, beslutsfattande samt problemlösning då man ofta behöver vara kreativ för att i samråd med 
             kund komma fram till den bästa lösningen för båda parter!</p>
