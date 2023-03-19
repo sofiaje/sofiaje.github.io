@@ -33,21 +33,37 @@ homeBtn.addEventListener("click", () => {
 
 
 aboutBtn.addEventListener("click", () => {
-    contentWrapper.innerHTML = `
 
+    renderAbout();
+    let infoCvBtn = document.querySelector("#infoCvBtn");
+
+    infoCvBtn.addEventListener("click", () => {
+        renderCv();
+    })
+
+})
+
+function renderAbout() {
+    contentWrapper.innerHTML = `
     <section class="textSection">
         <h2>Om mig</h2>
         <p>En positiv, ansvarstagande och nyfiken människa med ett stort intresse för kommunikation och problemlösning.<br><br>
         Mitt intresse för kod startade i början av 2000-talet med olika sociala communitys där man hade egna sidor att jobba med. Verktygen var då ganska begränsande men det fanns en utmaning i det som 
         lockade mig. Jag uppskattar det direkta i kodskrivandet - att resultaten kommer snabbt men också att det finns hundra sätt att skriva en kod på, man får göra sin egen grej!</p>
-    </section> 
+        <button id="infoCvBtn" class="secret-btn">Till CV <i class="fa-solid fa-arrow-right"></i></button>
+        </section> 
     `
-})
+}
 
 //--------------------------- portfolio ---------------------------------------------------------------------------------
 
 portfolioBtn.addEventListener("click", () => {
     closeMenu();
+    renderPorfolio();
+})
+
+
+function renderPorfolio() {
     contentWrapper.innerHTML = `
     <section class="textSection"><h2>Skolprojekt</h2><p>Här samsas lite större och lite mindre projekt från skolan.</p></section>
     <div class="project-container">
@@ -59,69 +75,80 @@ portfolioBtn.addEventListener("click", () => {
     </div>
     
     `
-})
+}
 
 
 //--------------------------- CV ----------------------------------------------------------------------------------------
 
 cvBtn.addEventListener("click", () => {
     closeMenu();
+    renderCv();
 
-    contentWrapper.innerHTML = `
-        <section class="textSection">
-            <h2>Arbetslivserfarenhet</h2>
-            <p>Jag har spenderat större delen av mitt arbetsliv inom handels, på företag som ICA och Plantagen men främst på IKEA där jag också jobbar extra under utbildningen.<br><br>
-            Genom åren har jag testat på det mesta inom området så som kassa, varuinköp, logistik och lekrum men mest har jag varit på kundservice. 
-            Här får jag använda färdigheter som jag också tror kan komma till nytta i mitt framtida yrke som utvecklare. 
-            Det handlar i stort om god kommunikation, beslutsfattande samt problemlösning då man ofta behöver vara kreativ för att i samråd med 
-            kund komma fram till den bästa lösningen för båda parter!</p>
-        </section>
-
-        <section class="textSection">
-            <h2>Skills</h2>
-            <p>Adobe Illustrator, Adobe Photoshop</p>
-            <p>Agila arbetsprocesser, scrum</p>
-            <p>JS, HTML5, CSS/SCSS, Bootstrap, Bulma</p>
-        </section>
-
-        <section class="textSection">
-            <h2>Utbildning</h2>
-            <p>Jag läser för tillfället mitt första år som student på Frontend programmet på Nackademin Yrkeshögskola i Solna, en utbildning som jag trivs väldigt bra på!</p><br>
-        </section>
-
-    <div class="education-container">
-        <section class="textSection-small">
-            <p><span class="course">Frontend utveckling</span><br>
-            <span Nackademin class="school">Nackademin</span> <br>
-            2022 - nu</p><br>
-            <p>Tvååring utbildning som fokuserar främst på Javascript. Vi har jobbat med projektmetodik så som agila arbetsprocesser och scrum. 
-            Ungefär 25procent av utbildningen är förlagd till LIA dvs lärande i arbete som genomförs på plats på ett företag. Min LIA startar i november 2023.</p>
-        </section>
-
-        <section class="textSection-small">
-            <p><span class="course">Konst och design</span><br>
-            <span class="school">St sigfrids folkhögskola</span> <br>
-            2016 - 2018</p><br>
-            <p>Tvåårig konstutbildning som inkluderar konst, illustration och grafisk design. Det första året var ett allmänt år där man 
-            fick prova på lite olika tekniker samt bygga upp en grundkunskap i färglära, komposition och skissteknik, medan andra året var 
-            mer inriktat och uppbyggt kring olika projekt. </p>
-        </section>
-
-        <section class="textSection-small">
-            <p>Relevanta kurser</p><br>
-            <p><span class="course">Kulturjournalistik och Kulturkritik 7.5hp</span><br><span class="school">Svenska filminstitutet vid Stockholms Universitet</span></p><br>
-            <p><span class="course">Digital grafik och Illustration 7.5hp</span><br><span class="school">Södertörns Högskola Stockholm</span></p>
-        </section>
-    </div>
-
-    `
 })
+
+function renderCv() {
+    contentWrapper.innerHTML = `
+    <section class="textSection">
+        <h2>Arbetslivserfarenhet</h2>
+        <p>Jag har spenderat större delen av mitt arbetsliv inom handels, på företag som ICA och Plantagen men främst på IKEA där jag också jobbar extra under utbildningen.<br><br>
+        Genom åren har jag testat på det mesta inom området så som kassa, varuinköp, logistik och lekrum men mest har jag varit på kundservice. 
+        Här får jag använda färdigheter som jag också tror kan komma till nytta i mitt framtida yrke som utvecklare. 
+        Det handlar i stort om god kommunikation, beslutsfattande samt problemlösning då man ofta behöver vara kreativ för att i samråd med 
+        kund komma fram till den bästa lösningen för båda parter!</p>
+    </section>
+
+    <section class="textSection">
+        <h2>Skills</h2>
+        <p>Adobe Illustrator, Adobe Photoshop</p>
+        <p>Agila arbetsprocesser, scrum</p>
+        <p>JS, HTML5, CSS/SCSS, Bootstrap, Bulma</p>
+    </section>
+
+    <section class="textSection">
+        <h2>Utbildning</h2>
+        <p>Jag läser för tillfället mitt första år som student på Frontend programmet på Nackademin Yrkeshögskola i Solna, en utbildning som jag trivs väldigt bra på!</p><br>
+    </section>
+
+<div class="education-container">
+    <section class="textSection-small">
+        <p><span class="course">Frontend utveckling</span><br>
+        <span Nackademin class="school">Nackademin</span> <br>
+        2022 - nu</p><br>
+        <p>Tvååring utbildning som fokuserar främst på Javascript. Vi har jobbat med projektmetodik så som agila arbetsprocesser och scrum. 
+        Ungefär 25procent av utbildningen är förlagd till LIA dvs lärande i arbete som genomförs på plats på ett företag. Min LIA startar i november 2023.</p>
+    </section>
+
+    <section class="textSection-small">
+        <p><span class="course">Konst och design</span><br>
+        <span class="school">St sigfrids folkhögskola</span> <br>
+        2016 - 2018</p><br>
+        <p>Tvåårig konstutbildning som inkluderar konst, illustration och grafisk design. Det första året var ett allmänt år där man 
+        fick prova på lite olika tekniker samt bygga upp en grundkunskap i färglära, komposition och skissteknik, medan andra året var 
+        mer inriktat och uppbyggt kring olika projekt. </p>
+    </section>
+
+    <section class="textSection-small">
+        <p>Relevanta kurser</p><br>
+        <p><span class="course">Kulturjournalistik och Kulturkritik 7.5hp</span><br><span class="school">Svenska filminstitutet vid Stockholms Universitet</span></p><br>
+        <p><span class="course">Digital grafik och Illustration 7.5hp</span><br><span class="school">Södertörns Högskola Stockholm</span></p>
+    </section>
+</div>
+
+`
+}
+
 
 
 //--------------------------- contact ---------------------------------------------------------------------------------
 
 contactBtn.addEventListener("click", () => {
     closeMenu();
+    renderContact();
+
+})
+
+
+function renderContact() {
     contentWrapper.innerHTML = `<h2>Kontakt</h2>
     <section class="textSection"><p>Är du nyfiken på vem jag är och vill veta mer? Har du en idé som du vill ha hjälp att realisera? 
     Tveka inte att ta kontakt med mig via sofia.jespersen@hotmail.com (eller återkom om några dagar för att skåda ett tjusigt kontaktformulär nedan).</p></section>
@@ -137,8 +164,7 @@ contactBtn.addEventListener("click", () => {
         </form>
     </div>
     `
-
-})
+}
 
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -146,16 +172,16 @@ contactBtn.addEventListener("click", () => {
 
 
 //funktion som tar en array med objekt och returnerar en lista som textsträng
-function createHTMLString(arr) {
-    let liString = "";
-    arr.forEach(element => {
-        console.log(element.company)
-        liString += `<p>${element.company}</p>
-        <li>${element.year}</li>
-        <li>Arbetsroll: ${element.role}</li><br>`
-    });
-    return liString;
-}
+// function createHTMLString(arr) {
+//     let liString = "";
+//     arr.forEach(element => {
+//         console.log(element.company)
+//         liString += `<p>${element.company}</p>
+//         <li>${element.year}</li>
+//         <li>Arbetsroll: ${element.role}</li><br>`
+//     });
+//     return liString;
+// }
 
 
 
