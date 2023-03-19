@@ -80,6 +80,11 @@ li {
   color: #CCCCCC;
 }
 
+section.column {
+  -moz-column-count: 2;
+       column-count: 2;
+}
+
 button {
   cursor: pointer;
 }
@@ -247,6 +252,11 @@ div.project-container {
 }
 .projects:hover {
   background: hsla(0, 0%, 100%, 0.3);
+}
+@media (width >= 576px) {
+  .projects {
+    width: 150px;
+  }
 }
 @media (width >= 768px) {
   .projects {

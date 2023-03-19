@@ -68,9 +68,13 @@ div.project-container{
     background: hsla(0, 0%, 100%, 0.1);
     padding: 1rem;
     width: 150px;
+
     aspect-ratio: 1;
     &:hover {
         background: hsla(0, 0%, 100%, 0.3);
+    }
+    @media ($sm){
+        width: 150px;
     }
     @media ($md) {
         width: 200px;

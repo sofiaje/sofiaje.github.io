@@ -3,6 +3,7 @@ let homeBtn = document.getElementById("homeBtn");
 let portfolioBtn = document.getElementById("portfolioBtn");
 let cvBtn = document.getElementById("cvBtn");
 let contactBtn = document.getElementById("contactBtn");
+let aboutBtn = document.getElementById("aboutBtn");
 
 
 
@@ -25,6 +26,23 @@ homeBtn.addEventListener("click", () => {
     loadPage();
 })
 
+
+
+
+//---------------------------about ---------------------------------------------------------------------------------
+
+
+aboutBtn.addEventListener("click", () => {
+    contentWrapper.innerHTML = `
+
+    <section class="textSection">
+        <h2>Om mig</h2>
+        <p>En positiv, ansvarstagande och nyfiken människa med ett stort intresse för kommunikation och problemlösning.<br><br>
+        Mitt intresse för kod startade i början av 2000-talet med olika sociala communitys där man hade egna sidor att jobba med. Verktygen var då ganska begränsande men det fanns en utmaning i det som 
+        lockade mig. Jag uppskattar det direkta i kodskrivandet - att resultaten kommer snabbt men också att det finns hundra sätt att skriva en kod på, man får göra sin egen grej!</p>
+    </section> 
+    `
+})
 
 //--------------------------- portfolio ---------------------------------------------------------------------------------
 
@@ -50,14 +68,6 @@ cvBtn.addEventListener("click", () => {
     closeMenu();
 
     contentWrapper.innerHTML = `
-
-        <section class="textSection">
-            <h2>Om mig</h2>
-            <p>En positiv, ansvarstagande och nyfiken människa med ett stort intresse för kommunikation och problemlösning.<br><br>
-            Mitt intresse för kod startade i början av 2000-talet med olika sociala communitys där man hade egna sidor att jobba med. Verktygen var då ganska begränsande men det fanns en utmaning i det som 
-            lockade mig. Jag uppskattar det direkta i kodskrivandet - att resultaten kommer snabbt men också att det finns hundra sätt att skriva en kod på, man får göra sin egen grej!</p>
-        </section>
-    
         <section class="textSection">
             <h2>Arbetslivserfarenhet</h2>
             <p>Jag har spenderat större delen av mitt arbetsliv inom handels, på företag som ICA och Plantagen men främst på IKEA där jag också jobbar extra under utbildningen.<br><br>
