@@ -33,10 +33,10 @@ homeBtn.addEventListener("click", () => {
 
 
 aboutBtn.addEventListener("click", () => {
-
+    closeMenu();
     renderAbout();
-    let infoCvBtn = document.querySelector("#infoCvBtn");
 
+    let infoCvBtn = document.querySelector("#infoCvBtn");
     infoCvBtn.addEventListener("click", () => {
         renderCv();
     })
