@@ -71,7 +71,6 @@ function renderPorfolio() {
         <a href="https://sofiaje.github.io/project/" target="_blank"><div class="projects">Knuten keramikverkstad</div></a>
         <a href="https://stormstina.github.io/my-lists/" target="_blank"><div class="projects">Gruppprojekt shoppinglista</div></a>
         <a href="https://sofiaje.github.io/Mario/" target="_blank"><div class="projects">Sofia Mario Bros</div></a>
-        <a href="#"><div class="projects" target="_blank">Tamagotchi</div></a>
         <a href="https://sofiaje.github.io/activities/" target="_blank"><div class="projects">Activity generator</div></a>
     </div>
     
