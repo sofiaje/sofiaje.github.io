@@ -65,7 +65,7 @@ span.color {
 
 .logo {
   font-weight: 700;
-  font-size: small;
+  font-size: medium;
 }
 
 footer p {
@@ -103,6 +103,7 @@ button {
 
 .secret-btn {
   padding: 1rem;
+  font-size: 1rem;
   background-color: rgba(0, 0, 0, 0);
   color: #CCCCCC;
   border: none;
@@ -138,6 +139,7 @@ button {
     cursor: pointer;
     display: block;
     position: absolute;
+    font-size: 1rem;
     width: 2rem;
     aspect-ratio: 1;
     border: none;
