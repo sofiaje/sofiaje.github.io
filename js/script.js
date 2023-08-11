@@ -23,6 +23,7 @@ function loadPage() {
 
 homeBtn.addEventListener("click", () => {
     closeMenu();
+    scroll(0, 0);
     loadPage();
 })
 
@@ -34,6 +35,7 @@ homeBtn.addEventListener("click", () => {
 
 aboutBtn.addEventListener("click", () => {
     closeMenu();
+    scroll(0, 0);
     renderAbout();
 
     let infoCvBtn = document.querySelector("#infoCvBtn");
@@ -59,6 +61,7 @@ function renderAbout() {
 
 portfolioBtn.addEventListener("click", () => {
     closeMenu();
+    scroll(0, 0);
     renderPorfolio();
 })
 
@@ -82,6 +85,7 @@ function renderPorfolio() {
 
 cvBtn.addEventListener("click", () => {
     closeMenu();
+    scroll(0, 0);
     renderCv();
 
 })
@@ -99,9 +103,10 @@ function renderCv() {
 
     <section class="textSection">
         <h2>Skills</h2>
-        <p>Adobe Illustrator, Adobe Photoshop</p>
         <p>Agila arbetsprocesser, scrum</p>
         <p>JS, HTML5, CSS/SCSS, Bootstrap, Bulma</p>
+        <p>node.js, mongoDB, Git</p>
+        <p>Adobe Illustrator, Adobe Photoshop</p>
     </section>
 
     <section class="textSection">
@@ -143,6 +148,7 @@ function renderCv() {
 
 contactBtn.addEventListener("click", () => {
     closeMenu();
+    scroll(0, 0);
     renderContact();
 
 })
@@ -168,20 +174,6 @@ function renderContact() {
 
 
 //---------------------------------------------------------------------------------------------------------------------
-
-
-
-//funktion som tar en array med objekt och returnerar en lista som textsträng
-// function createHTMLString(arr) {
-//     let liString = "";
-//     arr.forEach(element => {
-//         console.log(element.company)
-//         liString += `<p>${element.company}</p>
-//         <li>${element.year}</li>
-//         <li>Arbetsroll: ${element.role}</li><br>`
-//     });
-//     return liString;
-// }
 
 
 
