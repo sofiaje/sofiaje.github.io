@@ -17,6 +17,7 @@ a {
 .hero {
   font-size: 3rem;
   color: black;
+  line-height: 1.1;
   color: rgb(83, 117, 83);
 }
 @media (width >= 375px) {
