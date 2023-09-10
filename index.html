@@ -12,15 +12,19 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Italiana&family=Oswald:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="style/style.css">
+
+    <!-- javascript -->
+    <script src="js/menu.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+
 </head>
 <body>
-    
-    <div id="pageWrapper">
 
+    <div id="pageWrapper">
         <header>
             <div id="headWrapper">
                 <a href="https://sofiaje.github.io/">
@@ -32,7 +36,7 @@
                 </button>
                 <nav>
                     <ul id="primary-nav" data-visible="false" class="primary-nav">
-                        <li><button id="homeBtn" class="active-link secret-btn">Hem</button></li>
+                        <li><button id="homeBtn" class="active-link secret-btn active-btn">Hem</button></li>
                         <li><button id="aboutBtn" class="secret-btn">Om</button></li>
                         <li><button id="portfolioBtn" class="secret-btn">Portfolio</button></li>
                         <li><button id="cvBtn" class="secret-btn">CV</button></li>
@@ -42,29 +46,135 @@
             </div>
         </header>
 
-        <div id="contentWrapper">
+        <div class="pageContent">
+            <section class="section-1 grey hero-section">
+                <div class="content-section">
+                    <!-- <img src="/assets/mebe.png" alt=""> -->
+                    <h1 class="hero">Sofia Jespersen</h1>
+                    <p class="hero-sub">Kreativ och nyfiken frontend student baserad i Stockholm.</p>
+                    <button id="portfolioBtn2" class="primary-btn">portfolio</button>
+                    <button id="contactBtn2" class="primary-btn">Kontakt</button>
+                </div>
+            </section>
+            <section class="section-2 full-vh">
+                <div class="content-section">
+                    <article class="reveal">
+                        <div class="text-section">
+                            <h2>Vem är jag?</h2>
+                            <p>
+                                En positiv, ansvarstagande och nyfiken människa med ett stort intresse för 
+                                kommunikation och problemlösning.
             
+                                Mitt intresse för kod startade i början av 2000-talet med olika sociala
+                                communitys där man hade egna sidor att jobba med. Verktygen var då ganska 
+                                begränsande men det fanns en utmaning i det som lockade mig. Jag uppskattar 
+                                det direkta i kodskrivandet - att resultaten kommer snabbt men också att det 
+                                finns hundra sätt att skriva en kod på, man får göra sin egen grej!
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section-3 grey full-vh">
+                <div class="content-section">
+                    <article class="reveal">
+                        <div class="text-section">
+
+                            <h2>Portfolio</h2>
+                        </div>
+                        <div class="project-container">
+                            <a href="https://sofiaje.github.io/star-wars" target="_blank"><div class="projects">Star wars trivia</div></a>
+                            <a href="https://sofiaje.github.io/project/" target="_blank"><div class="projects">Knuten keramikverkstad</div></a>
+                            <a href="https://stormstina.github.io/my-lists/" target="_blank"><div class="projects">Gruppprojekt shoppinglista</div></a>
+                            <a href="https://sofiaje.github.io/Mario/" target="_blank"><div class="projects">Sofia Mario Bros</div></a>
+                            <a href="https://sofiaje.github.io/activities/" target="_blank"><div class="projects">Activity generator</div></a>
+                            <a href="https://sofiaje.github.io/activities/" target="_blank"><div class="projects">LitRate bokapp</div></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section-4 full-vh">
+                <div class="content-section">
+                    <article class="reveal">
+                        <section class="text-section">
+                            <h2>Arbetslivserfarenhet</h2>
+                            <p>Jag har spenderat större delen av mitt arbetsliv inom handels, på företag som ICA och Plantagen men främst på IKEA där jag också jobbar extra under utbildningen.<br><br>
+                            Genom åren har jag testat på det mesta inom området så som kassa, varuinköp, logistik och lekrum men mest har jag varit på kundservice. 
+                            Här får jag använda färdigheter som jag också tror kan komma till nytta i mitt framtida yrke som utvecklare. 
+                            Det handlar i stort om god kommunikation, beslutsfattande samt problemlösning då man ofta behöver vara kreativ för att i samråd med 
+                            kund komma fram till den bästa lösningen för båda parter!</p>
+                        </section>
+                        <section class="text-section">
+                            <h2>Skills</h2>
+                            <p>Agila arbetsprocesser, scrum</p>
+                            <p>JS, HTML5, CSS/SCSS, Bootstrap, Bulma</p>
+                            <p>node.js, mongoDB, Git</p>
+                            <p>Adobe Illustrator, Adobe Photoshop</p>
+                        </section>
+                        <section class="text-section">
+                            <h2>Utbildning</h2>
+                            <p>Jag läser för tillfället mitt andra år som student på Frontend programmet på Nackademin Yrkeshögskola i Solna, en utbildning som jag trivs väldigt bra på!</p><br>
+                        </section>
+                    </article>
+                    <article class="reveal">
+                        <div class="education-container">
+                            <section class="textSection-small">
+                                <p><span class="course">Frontend utveckling</span><br>
+                                <span class="school">Nackademin</span> <br>
+                                2022 - nu</p><br>
+                                <p>Tvååring utbildning som fokuserar främst på Javascript. Vi har jobbat med projektmetodik så som agila arbetsprocesser och scrum. 
+                                Ungefär 25procent av utbildningen är förlagd till LIA dvs lärande i arbete som genomförs på plats på ett företag. Min LIA startar i november 2023.</p>
+                            </section>
+                        
+                            <section class="textSection-small">
+                                <p><span class="course">Konst och design</span><br>
+                                <span class="school">St sigfrids folkhögskola</span> <br>
+                                2016 - 2018</p><br>
+                                <p>Tvåårig konstutbildning som inkluderar konst, illustration och grafisk design. Det första året var ett allmänt år där man 
+                                fick prova på lite olika tekniker samt bygga upp en grundkunskap i färglära, komposition och skissteknik, medan andra året var 
+                                mer inriktat och uppbyggt kring olika projekt. </p>
+                            </section>
+                        
+                            <section class="textSection-small">
+                                <p>Relevanta kurser</p><br>
+                                <p><span class="course">Kulturjournalistik och Kulturkritik 7.5hp</span><br><span class="school">Svenska filminstitutet vid Stockholms Universitet</span></p><br>
+                                <p><span class="course">Digital grafik och Illustration 7.5hp</span><br><span class="school">Södertörns Högskola Stockholm</span></p>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-5 grey full-vh">
+                <div class="content-section">
+                    <article class="reveal">
+                        <div class="text-section">
+
+                            <h2>Kontakt</h2>
+                            <p>
+                                Är du nyfiken på vem jag är och vill veta mer? Har du en idé som du vill ha hjälp att realisera? 
+                                Tveka inte att ta kontakt med mig via sofia.jespersen@hotmail.com
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+            </section>
+
         </div>
-        
-        
+
         <footer>
             <div id="footWrapper">
-                <section>
-                </section>
-                <section class="iconSection">
+
+                <div></div>
+                <div class="iconSection">
                     <a href="https://github.com/sofiaje" class="icon-link"><i class="fa-brands fa-github fa-lg"></i></a>
                     <a href="https://www.linkedin.com/in/sofia-jespersen-5694b1221/" class="icon-link"><i class="fa-brands fa-linkedin fa-lg"></i></a>
                     <a href="mailto:sofia.jespersen@hotmail.com" class="icon-link"><i class="fa-solid fa-paper-plane fa-lg"></i></a>
-                </section>
+                </div>
             </div>
         </footer>
     </div>
-
     
-
-
-    <script src="js/info.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>

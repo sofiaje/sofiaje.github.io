@@ -1,7 +1,10 @@
 footer{
-    border: 1px solid $border;
+    position: fixed;
 
+    bottom: 0px;
     width: 100%;
+    // background-color: rgb(155, 170, 165);
+
     padding: 1rem;
     padding-top: 0;
     #footWrapper {
@@ -9,13 +12,5 @@ footer{
         max-width: 1600px;
         @include flex($justify: space-between, $align: center);
     }
-
-    section {
-
-        @include flex($direction: column)
-    }
-    .iconSection {
-        @include flex
-
-    }
+   
 }

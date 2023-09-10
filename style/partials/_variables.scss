@@ -8,6 +8,7 @@ $xl: "width >= 1200px";
 $sm-reverse: "width <= 576px";
 
 
+
 //flex mixin
 @mixin flex($direction:row, $justify:flex-start, $align:stretch, $wrap:no-wrap, $gap: 0px){
     display:flex;
@@ -24,7 +25,7 @@ $sm-reverse: "width <= 576px";
 //colors
 $p-white: white;
 $p-black: black;
-$accent-color: #14828B;
+$accent-color: rgb(218, 226, 223);
 $accent-color-dark: #064e55;
 
 $invisible: rgb(0, 0, 0, 0);
@@ -32,7 +33,8 @@ $invisible: rgb(0, 0, 0, 0);
 $bg-color: #002B35;
 
 $h-color: #14828B;
-$text-color: #CCCCCC;
+$text-color: #484848;
+$hero-text: black;
 
 
 

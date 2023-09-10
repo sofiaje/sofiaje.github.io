@@ -1,92 +1,37 @@
 * {
+    line-height: 1.5;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    line-height: 1.5rem;
-    color: $text-color;
+
 }
 
-//headings
 h1,h2,h3,h4,h5 {
-    color: $text-color;
-    line-height: normal;
+    // font-family: 'Lato', sans-serif;
+    padding: 0.5rem 0;
+    color: rgb(83, 117, 83);
 
-    padding: 1rem 0 0.5rem 0;
-    @media ($sm){
-        // font-size: 1.5em;
-    }
 }
 
-h1, h2 {
-    color: $h-color;
+a {
+    text-decoration: none;
+    color: rgb(68, 85, 68);
 }
 
-h1.first-page-heading {
-    font-family: 'Italiana', serif;
-    text-transform:uppercase;
-    font-size: 2.5rem;
-    font-weight: 100;
-    letter-spacing: 2px;
-    @media ($xs) {
-        font-size: 3.5rem;
-    }
-    @media ($lg) {
+.hero {
+    font-size: 3rem;
+    color: $hero-text;
+    color: rgb(83, 117, 83);
+    @media ($xs){
         font-size: 4rem;
     }
-    @media ($xl) {
-        font-size: 5rem;
-    }
+}
+.hero-sub {
+    color: $hero-text;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
-p.subheading {
-    letter-spacing: 1.5px;
-    font-size: 0.8rem;
-    @media ($xl) {
-        font-size: 1rem;
-        letter-spacing: 2px;
-        line-height: 2rem;
-    }
+.course {
+    color: rgb(83, 117, 83);
 }
 
-span.course {
-    color: $h-color;
-}
-
-//links, special classes
-a {
-    font-family: "Montserrat", sans-serif;
-    color: $text-color;
-    text-decoration: none;
-}
-span.color {
-    color: $h-color;
-
-}
-.logo {
-    font-weight: 700;
-    font-size: medium;
-}
-
-
-footer {
-    p {
-    font-size: small;
-    }
-    h1 {
-        font-size: 1rem;
-    }
-}
-
-
-//form
-ul {
-}
-li {
-    list-style: none;
-    color: $text-color;
-}
-
-
-
-section.column {
-    column-count: 2;
-}
