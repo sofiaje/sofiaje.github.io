@@ -1,0 +1,25 @@
+#info {
+    padding: 2rem 0;
+}
+.contentWrapper h1 {
+    margin: 1rem 0;
+}
+.hero {
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+.flexHero {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.heroText {
+    font-size: 1.2rem;
+}
+.btnContainer {
+    margin-top: 2rem;
+}
+.center {
+    text-align: center;
+    margin: 4rem 0;
+}

@@ -1,0 +1,38 @@
+:root {
+  --backgroundColor: rgb(5, 78, 94);
+
+  --headerColor: var(--backgroundColor);
+  --footerColor: rgba(228, 228, 228, 0);
+  --footerTextColor: var(--light);
+
+  --boxShadow: 0px 0px 15px rgb(52, 125, 125);
+
+  --accentColor: rgb(219, 219, 219);
+
+  --headingColor: var(--light);
+  --textColor: var(--light);
+  --linkColor: var(--light);
+  --linkHover: grey;
+
+
+  /* btns */
+
+  --btnColor: rgba(0, 0, 0, 0);
+  --btnActiveColor: rgb(7, 111, 129);
+  --btnTextColor: var(--light);
+  --btnBorder: var(--light);
+  
+  --btnColorPrime: rgb(7, 111, 129);
+  --btnTextColorPrime: var(--light);
+
+  --light: #e2e2e2;
+  --dark: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--backgroundColor);
+}
+

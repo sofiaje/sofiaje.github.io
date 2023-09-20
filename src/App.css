@@ -1,0 +1,90 @@
+/*--------- Universal styling -------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@100;300;400;700&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: var(--textColor);
+  scroll-behavior: smooth;
+}
+
+.contentWrapper {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  flex-grow: 1;
+}
+section {
+  margin-top: 2rem;
+}
+
+main {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  flex-grow: 1;
+}
+ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+h1, h2, h3, h4, h5{
+  color: var(--headingColor);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.4rem;
+  
+}
+
+/* buttons */
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  background-color: var(--btnColor);
+  color: var(--btnTextColor);
+  border: 1.5px solid var(--btnBorder);
+  transition: 0.3s ease-in;
+}
+
+.btn.active, .btn:hover {
+  background-color: var(--btnActiveColor);
+  border: 1.5px solid var(--btnActiveColor);
+  color:var(--btnTextColorPrime);
+}
+
+.primaryBtn {
+  background-color: var(--btnColorPrime);
+  border: 1.5px solid var(--btnColorPrime);
+  color: var(--btnTextColorPrime);
+}
+
+.flex {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.mTop {margin-top: 3rem;}
