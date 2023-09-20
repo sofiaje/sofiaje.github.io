@@ -1,28 +1,40 @@
 * {
   line-height: 1.5;
+}
+
+p {
   font-family: "Inter", sans-serif;
-  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
   padding: 0.5rem 0;
   color: rgb(83, 117, 83);
 }
 
 a {
   text-decoration: none;
+  font-family: "Inter", sans-serif;
   color: rgb(68, 85, 68);
 }
 
 .hero {
   font-size: 3rem;
   color: black;
+  letter-spacing: -3px;
   line-height: 1.1;
+  font-family: "Jost", sans-serif;
   color: rgb(83, 117, 83);
 }
 @media (width >= 375px) {
   .hero {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+}
+@media (width >= 768px) {
+  .hero {
+    line-height: 1.4;
   }
 }
 
@@ -176,6 +188,14 @@ footer #footWrapper {
 .hero-section {
   padding-top: 100px;
   height: 50vh;
+  margin-bottom: 2rem;
+}
+@media (width >= 768px) {
+  .hero-section {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin: 2rem;
+  }
 }
 
 .full-vh {
@@ -191,8 +211,17 @@ footer #footWrapper {
   }
 }
 
+.section-2.full-vh {
+  padding-top: 50px;
+}
+@media (width >= 768px) {
+  .section-2.full-vh {
+    padding-top: 10px;
+  }
+}
+
 .content-section {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
