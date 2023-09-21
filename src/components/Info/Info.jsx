@@ -16,9 +16,9 @@ const Info = () => {
                             </svg>
                         </div> */}
                         <div>
-                            <m.div initial={{ fontSize: "0rem", opacity: 0 }} animate={{ fontSize: "3rem", opacity: 1 }} transition={{ duration: 0.75, ease: "easeOut" }} >
-                                <h1 className="heroHeading">Frontend Developer</h1>
-                                <m.p className="heroText">Kreativ och nyfiken student baserad i Stockholm. Går just nu mitt andra år på Frontend programmet på Nackademin.</m.p>
+                            <m.div>
+                                <m.h1 className="heroHeading" initial={{opacity: 0, y: -300}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Frontend Developer</m.h1>
+                                <m.p className="heroText" initial={{opacity: 0, y: -100}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Kreativ och nyfiken student baserad i Stockholm. Går just nu mitt andra år på Frontend programmet på Nackademin.</m.p>
                             </m.div>
                             <div className="flex btnContainer">
                                 <NavLink className="primaryBtn btn" to="/contact">Contact me</NavLink>

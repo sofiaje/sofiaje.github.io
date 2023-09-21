@@ -37,6 +37,8 @@
     flex-wrap: wrap;
 }
 .heroHeading {
+    font-size: 5rem;
+    letter-spacing: -2px;
     color: var(--light);
 }
 .heroText {
@@ -44,7 +46,7 @@
     font-size: 1.2rem;
 }
 .btnContainer {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .center {
     text-align: center;
