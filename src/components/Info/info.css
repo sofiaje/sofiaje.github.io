@@ -37,9 +37,14 @@
     flex-wrap: wrap;
 }
 .heroHeading {
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: -2px;
     color: var(--light);
+}
+@media (width >= 400px){
+    .heroHeading {
+        font-size: 5rem;
+    }
 }
 .heroText {
     color: var(--light);

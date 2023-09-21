@@ -11,7 +11,7 @@ const Header = () => {
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         const prev = scrollY.getPrevious();
-        if (latest > prev && latest > 80) {
+        if (latest > prev && latest > 100) {
             setHidden(true)
         } else {
             setHidden(false)

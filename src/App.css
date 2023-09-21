@@ -23,7 +23,7 @@ section {
 
 #info {
   /* background-color: var(--backgroundColor); */
-  background: rgb(14,116,137);
+  background: #054e5e;
   background: linear-gradient(0deg, rgba(14,116,137,1) 0%, rgba(5,78,94,1) 91%);
   min-height: 55vh;
 }
