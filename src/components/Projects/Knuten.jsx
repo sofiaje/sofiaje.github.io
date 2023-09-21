@@ -7,7 +7,7 @@ const Knuten = () => {
             <m.div initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
                 <p>Projekt från kurs i HTML och CSS</p>
                 <p>Github: <a href="https://github.com/sofiaje/project">kod</a><br />
-                Visit site: <a href="https://sofiaje.github.io/project/">sofiaje.github.io/project</a></p>
+                Live demo: <a href="https://sofiaje.github.io/project/">sofiaje.github.io/project</a></p>
             </m.div>
         </div>
      );

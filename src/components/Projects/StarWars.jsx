@@ -7,7 +7,7 @@ const StarWars = () => {
             <m.div initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
                 <p>Ett Star Wars projekt som tillåter användaren att jämnföra olika karaktärer från filmerna. Projektet använder SWAPI, ett något långsamt Star Wars Trivia API.</p>
                 <p>Github: <a href="https://github.com/sofiaje/star-wars">kod</a><br />
-                    Visit site: <a href="https://sofiaje.github.io/star-wars/">sofiaje.github.io/star-wars</a></p>
+                Live demo: <a href="https://sofiaje.github.io/star-wars/">sofiaje.github.io/star-wars</a></p>
             </m.div>
         </div>
     );

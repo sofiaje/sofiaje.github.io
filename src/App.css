@@ -17,7 +17,13 @@
   flex-grow: 1;
 }
 section {
-  margin-top: 2rem;
+  margin-top: 0rem;
+  padding-top: 2rem;
+}
+
+#info {
+  background-color: var(--backgroundColor);
+  min-height: 60vh;
 }
 
 main {
@@ -78,6 +84,10 @@ h3 {
   background-color: var(--btnColorPrime);
   border: 1.5px solid var(--btnColorPrime);
   color: var(--btnTextColorPrime);
+}
+.btn.heroBtn {
+  border-color: var(--heroBtn);
+  color: var(--heroBtn);
 }
 
 .flex {

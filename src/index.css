@@ -2,37 +2,44 @@
   --backgroundColor: rgb(5, 78, 94);
 
   --headerColor: var(--backgroundColor);
+  --headerTextColor: var(--light);
+  
   --footerColor: rgba(228, 228, 228, 0);
-  --footerTextColor: var(--light);
+  --footerTextColor: var(--dark);
+
+  --heroBtn: white;
+  
 
   --boxShadow: 0px 0px 15px rgb(52, 125, 125);
 
   --accentColor: rgb(219, 219, 219);
 
-  --headingColor: var(--light);
-  --textColor: var(--light);
-  --linkColor: var(--light);
+  --headingColor: var(--dark);
+  --textColor: var(--dark);
+  --linkColor: var(--dark);
+  --navLinkColor: var(--light);
   --linkHover: grey;
 
 
   /* btns */
 
   --btnColor: rgba(0, 0, 0, 0);
-  --btnActiveColor: rgb(7, 111, 129);
-  --btnTextColor: var(--light);
-  --btnBorder: var(--light);
+  --btnActiveColor: rgb(7, 151, 177);
+  --btnTextColor: var(--dark);
+  --btnBorder: var(--dark);
   
-  --btnColorPrime: rgb(7, 111, 129);
+  --btnColorPrime: rgb(6, 159, 186);
   --btnTextColorPrime: var(--light);
 
   --light: #e2e2e2;
-  --dark: black;
+  --dark: rgb(35, 35, 35);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: var(--backgroundColor);
+  /* background-color: var(--backgroundColor); */
+  background-color: rgb(248, 248, 248);
 }
 

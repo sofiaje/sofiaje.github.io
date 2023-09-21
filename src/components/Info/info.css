@@ -4,6 +4,29 @@
 .contentWrapper h1 {
     margin: 1rem 0;
 }
+.flexWrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.flexWrapper > div {
+    background-color: rgb(237, 237, 237);
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    
+}
+@media (width >= 600px){
+    .flexWrapper > div {
+        max-width: 40%;
+    }
+}
+@media (width >= 1000px){
+    .flexWrapper > div {
+        max-width: 28%;
+    }
+}
 .hero {
     font-size: 4rem;
     margin-top: 1rem;
@@ -13,7 +36,11 @@
     gap: 3rem;
     flex-wrap: wrap;
 }
+.heroHeading {
+    color: var(--light);
+}
 .heroText {
+    color: var(--light);
     font-size: 1.2rem;
 }
 .btnContainer {

@@ -1,4 +1,4 @@
-.header {
+header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -8,10 +8,12 @@
     background-color: var(--headerColor);
     /* box-shadow: var(--boxShadow); */
     z-index: 1;
+    color: var(--headerTextColor);
   }
   
   .header h1 {
     font-size: large;
+    color: var(--headerTextColor);
   }
   .header ul {
     list-style: none;
@@ -23,17 +25,17 @@
   }
     
   .header nav a {
-    color: var(--linkColor);
+    color: var(--navLinkColor);
     text-decoration: none;
     cursor: pointer;
     padding: 0.5rem 0.2rem;
   }
   
   .active {
-    border-bottom: 2px solid var(--linkColor);
+    border-bottom: 2px solid var(--navLinkColor);
   }
   
   .header nav a:hover {
-    border-bottom: 2px solid var(--linkColor);
+    border-bottom: 2px solid var(--navLinkColor);
   }
   

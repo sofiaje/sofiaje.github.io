@@ -49,9 +49,9 @@ const Project = () => {
                     </ul>
 
                 </m.div>
-                <section className="mTop">
+                <div className="mTop">
                     <Outlet />
-                </section>
+                </div>
                 
             </div>
         </section>
