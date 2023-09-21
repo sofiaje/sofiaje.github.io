@@ -2,7 +2,6 @@ import "./info.css"
 import { NavLink } from "react-router-dom";
 import { motion as m } from "framer-motion";
 
-
 const Info = () => {
     return (
         <>

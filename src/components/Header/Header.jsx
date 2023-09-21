@@ -22,7 +22,7 @@ const Header = () => {
         <m.header className="header"
             variants={{visible: {y: 0},hidden: { y: "-100%" }}} animate={hidden ? "hidden" : "visible"} transition={{duration: 0.35, ease: easeInOut}} >
             <div>
-                <h1>Sofia Jespersen</h1>
+                <NavLink to="/"><h1>Sofia Jespersen</h1></NavLink>
 
             </div>
             <nav>
