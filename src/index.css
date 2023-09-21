@@ -1,5 +1,5 @@
 :root {
-  --backgroundColor: rgb(5, 78, 94);
+  --backgroundColor: #054e5e;
 
   --headerColor: var(--backgroundColor);
   --headerTextColor: var(--light);

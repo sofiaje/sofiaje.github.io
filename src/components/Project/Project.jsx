@@ -38,7 +38,7 @@ const Project = () => {
     return ( 
         <section id="project">
             <div className="contentWrapper">
-                <m.h2 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, ease: "easeInOut" }} >Projects</m.h2>
+                <m.h2 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, ease: "easeInOut" }} >Projekt</m.h2>
                 <m.div initial={{ y: 40, opacity:0 }} animate={{ y: 0, opacity:1 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
                     <p>Här samsas små och stora projekt.</p>
                     <ul className="flex">

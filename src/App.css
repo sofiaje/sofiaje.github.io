@@ -23,7 +23,7 @@ section {
 
 #info {
   background-color: var(--backgroundColor);
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 main {
