@@ -9,11 +9,11 @@ import {
 
 // pages
 import Root from './pages/Root'
-import Project from './components/Project/Project'
 import Info from './components/Info/Info'
 import Contact from './components/Contact/Contact'
 import ErrorPage from './components/ErrorPage/ErrorPage'
 import Oneproject from './components/Project/oneProject'
+import Project from './components/Project/Project'
 
 // projects
 
