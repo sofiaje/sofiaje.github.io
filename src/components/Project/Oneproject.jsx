@@ -14,7 +14,7 @@ const Oneproject = () => {
                 <m.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>
 
                     {/* {image && <span>{image} image</span>} */}
-                    {image && <img src={process.env.PUBLIC_URL + image}></img>}
+                    {image && <img src={image}></img>}
                     <m.h3 initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} >{name}</m.h3>
                     <m.div initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
                         <p>{body}</p>
