@@ -1,5 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { motion as m} from "framer-motion";
+import { motion as m } from "framer-motion";
+import classes from "./style/project.module.css"
+
+// images
+import star from "./assets/star.png"
+
 
 
 const Project = () => {
@@ -7,53 +12,71 @@ const Project = () => {
     const links = [
         {
             path: "/projectOne",
-            name: "Star Wars Trivia",
+            name: "Star wars",
+            img: star,
+            body: "Lorem ipsum dolor sit amet consectetur.",
             id: 1
         },
         {
             path: "/projectTwo",
             name: "Knuten Keramikverkstad",
+            body: "Lorem ipsum dolor sit amet consectetur.",
             id: 2
         },
         {
             path: "/projectThree",
             name: "LitRate",
+            body: "Lorem ipsum dolor sit amet consectetur.",
+
             id:3
         },
         {
             path: "/projectFour",
             name: "Mario",
+            body: "Lorem ipsum dolor sit amet consectetur.",
             id:4
         },
         {
             path: "/projectFive",
             name: "React Forum",
+            body: "Lorem ipsum dolor sit amet consectetur.",
             id:5
-        },{
+        },
+        {
             path: "/projectSix",
             name: "Streak-Counter",
+            body: "Lorem ipsum dolor sit amet consectetur.",
             id:6
+        },
+        {
+            path: "/projectSeven",
+            name: "Todo list",
+            body: "Lorem ipsum dolor sit amet consectetur.",
+            id:7
         },
     ]
     return ( 
         <section id="project">
             <div className="contentWrapper">
-                <m.h2 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, ease: "easeInOut" }} >Projekt</m.h2>
-                <m.div initial={{ y: 40, opacity:0 }} animate={{ y: 0, opacity:1 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
-                    <p>Här samsas små och stora projekt.</p>
-                    <ul className="flex">
-                        {links.map(link => (
-                            <li><NavLink className="btn" key={link.id} to={`/project${link.path}`}>{link.name}</NavLink></li>
-                        ))}
-                        
-                    </ul>
+                <m.h2 initial={{ y: 10}} animate={{ y: 0}} transition={{ duration: 0.5, ease: "easeInOut" }} >Projekt</m.h2>
+                <m.div initial={{ y: 40}} animate={{ y: 0}} transition={{ duration: 0.5, ease: "easeInOut" }} >
 
+                    <div className={classes.projectContainer}> 
+                        {links.map(link => (
+                                <NavLink key={link.id} to={`${link.path}`}>
+                                    <div className={classes.projectCard}>
+                                        <div className={classes.fakeImage}></div>
+                                        <div className={classes.projectCardText}>
+                                            <h3>{link.name}</h3>
+                                            {/* <p>{link.body}</p> */}
+                                        </div>
+                                    </div>
+                                </NavLink>
+                        ))}
+                    </div>
                 </m.div>
-                <div className="mTop">
-                    <Outlet />
-                </div>
-                
             </div>
+                
         </section>
      );
 }

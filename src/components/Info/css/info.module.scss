@@ -1,13 +1,20 @@
 #info {
     padding: 2rem 0;
-}
-.contentWrapper h1 {
-    margin: 1rem 0;
+    color: white;   
+    background: #054e5e;
+    background: linear-gradient(0deg, rgba(14,116,137,1) 0%, rgba(5,78,94,1) 91%);
+    min-height: 55vh;
+    h1 {
+        margin: 1rem 0;
+    }
 }
 .flexWrapper {
+    max-width: 1200px;
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin: auto;
 }
 .flexWrapper > div {
     background-color: rgb(237, 237, 237);
@@ -15,22 +22,19 @@
     padding: 1.2rem;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    
-}
-@media (width >= 600px){
-    .flexWrapper > div {
-        max-width: 40%;
+    @media (width >= 600px){
+        max-width: 50%;
     }
-}
-@media (width >= 1000px){
-    .flexWrapper > div {
+    @media (width >= 1000px){
         max-width: 28%;
     }
 }
+
 .hero {
     font-size: 4rem;
     margin-top: 1rem;
 }
+
 .flexHero {
     display: flex;
     gap: 3rem;
@@ -40,20 +44,18 @@
     font-size: 4rem;
     letter-spacing: -2px;
     color: var(--light);
-}
-@media (width >= 400px){
-    .heroHeading {
+    @media (width >= 400px){
         font-size: 5rem;
     }
 }
+
 .heroText {
     color: var(--light);
     font-size: 1.2rem;
 }
+
 .btnContainer {
     margin-top: 3rem;
-}
-.center {
-    text-align: center;
-    margin: 4rem 0;
+    display: flex;
+    gap: 1rem;
 }

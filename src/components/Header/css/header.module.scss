@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: var(--headerColor);
+    z-index: 1;
+    color: var(--headerTextColor);
+
+    h1 {
+      font-size: large;
+      color: var(--headerTextColor);
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 0 2rem;
+      margin-right: 1rem;
+    }
+    nav a {
+      color: var(--navLinkColor);
+      text-decoration: none;
+      cursor: pointer;
+      padding: 0.5rem 0.2rem;
+    }
+    nav a:hover {
+      border-bottom: 2px solid var(--navLinkColor);
+    }
+    .active {
+      border-bottom: 2px solid var(--navLinkColor);
+    }
+    
+  }
+  
+    
+  
+  

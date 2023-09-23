@@ -1,0 +1,22 @@
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.projectCard {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.projectCardText {
+  padding: 1rem;
+}
+.fakeImage {
+  width: 100%;
+  background-color: rgb(228, 228, 228);
+  height: 200px;
+  min-width: 300px;
+}
