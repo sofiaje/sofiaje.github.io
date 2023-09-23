@@ -19,6 +19,7 @@ import Mario from './components/Projects/Mario'
 import ReactForum from './components/Projects/ReactForum'
 import StreakCounter from './components/Projects/StreakCounter'
 import Todo from './components/Projects/Todo'
+import ErrorPage from './components/ErrorPage/ErrorPage'
 
 // projects
 
@@ -35,7 +36,9 @@ function App() {
         <Route path="projectFour" element={<Mario/>} />
         <Route path="projectFive" element={<ReactForum/>} />
         <Route path="projectSix" element={<StreakCounter/>} />
-        <Route path="projectSeven" element={<Todo/>} />
+        <Route path="projectSeven" element={<Todo />} />
+        <Route path="*" element={<ErrorPage />} />
+        
       </Route>
     ))
 
