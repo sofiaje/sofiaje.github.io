@@ -16,7 +16,7 @@ const Info = () => {
                         </div> */}
                         <div>
                             <m.div>
-                                <m.h1 className="heroHeading" initial={{opacity: 0, y: -300}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Frontend Developer</m.h1>
+                                <m.h1 className="heroHeading" initial={{opacity: 0, y: -200}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Frontend Developer</m.h1>
                                 <m.p className="heroText" initial={{opacity: 0, y: -100}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Kreativ och nyfiken student med känsla för färg och form. Går just nu mitt andra år på Frontend programmet på Nackademin i Stockholm.</m.p>
                             </m.div>
                             <div className="flex btnContainer">
