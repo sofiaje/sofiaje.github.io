@@ -16,7 +16,7 @@ const Info = () => {
                             </m.div>
                             <div className={classes.btnContainer}>
                                 <NavLink className="primaryBtn btn" to="/contact">Contact me</NavLink>
-                                <NavLink className="btn heroBtn" to="/project">Portfolio</NavLink>
+                                <NavLink className="btn heroBtn" to="/projects">Portfolio</NavLink>
                             </div>
                         </div>
                     </div>
