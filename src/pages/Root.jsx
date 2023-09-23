@@ -8,7 +8,7 @@ const Root = () => {
         {
             path: "/projectOne",
             name: "Star wars",
-            image: "/src/components/project/assets/star.png",
+            image: "/project/assets/star.png",
             body: "Ett Star Wars projekt som tillåter användaren att jämnföra olika karaktärer från filmerna. Projektet använder SWAPI, ett något långsamt Star Wars Trivia API.",
             tech: ["Javascript", "HTML", "Css", "Flexbox"],
             github: "https://github.com/sofiaje/star-wars",
@@ -27,7 +27,7 @@ const Root = () => {
         {
             path: "/projectThree",
             name: "LitRate",
-            image: "/src/components/project/assets/litRate.png",
+            image: "/src/assets/litRate.png",
             body: "Slutprojekt från kursen Interaktion med CMS. Har använt Strapi Headless CMS för att skapa en backend till en bokaffär. Här kan användare logga in, spara böcker i en läslista och betygsätta dessa.",
             tech: ["Strapi", "Javascript", "Scss", "Flexbox"],
             github: "https://github.com/sofiaje/BookApp",
