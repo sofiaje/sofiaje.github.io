@@ -19,7 +19,6 @@ import Mario from './components/Projects/Mario'
 import ReactForum from './components/Projects/ReactForum'
 import StreakCounter from './components/Projects/StreakCounter'
 import Todo from './components/Projects/Todo'
-import ProjectLayout from './components/Project/ProjectLayout'
 
 // projects
 

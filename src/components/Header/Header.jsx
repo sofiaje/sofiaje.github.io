@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { easeInOut, motion as m, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
-import classes from "./css/header.module.css"
+import classes from "./header.module.scss"
 
 
 const Header = () => {

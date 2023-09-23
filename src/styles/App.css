@@ -90,3 +90,10 @@ img {
   width: 100%;
   max-width: 500px;
 }
+
+span.technologies {
+  background-color: var(--btnColorPrime);
+  color: white;
+  padding: 0.1rem;
+  margin-right: 0.2rem;
+}

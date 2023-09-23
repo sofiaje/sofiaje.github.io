@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { motion as m } from "framer-motion";
-import classes from "./css/info.module.css"
+import classes from "./info.module.scss"
 
 const Info = () => {
     return (

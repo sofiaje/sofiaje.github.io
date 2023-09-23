@@ -6,7 +6,9 @@ const Todo = () => {
             <div className="contentWrapper">
                 <m.div initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
 
+
                     <div>
+
                         <m.h3 initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} >React todo</m.h3>
                         <m.div initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
                             <p>Klassisk nybörjar-app i React, med minimalistisk design.</p>
