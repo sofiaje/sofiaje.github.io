@@ -7,7 +7,7 @@ const Root = () => {
     const projects = [
         {
             path: "/projectOne",
-            name: "Star wars",
+            name: "Star wars Trivia",
             image: "/assets/star.png",
             body: "Ett Star Wars projekt som tillåter användaren att jämnföra olika karaktärer från filmerna. Projektet använder SWAPI, ett något långsamt Star Wars Trivia API.",
             tech: ["Javascript", "HTML", "Css", "Flexbox"],
@@ -18,6 +18,7 @@ const Root = () => {
         {
             path: "/projectTwo",
             name: "Knuten Keramikverkstad",
+            image: "/assets/knuten.png",
             body: "Slutprojekt för kursen HTML och CSS. En hemsida för en fiktiv keramikstudio i Stockholm.",
             tech: ["HTML", "Css", "Flexbox"],
             github: "https://github.com/sofiaje/project",
@@ -37,6 +38,7 @@ const Root = () => {
         {
             path: "/projectFour",
             name: "Mario",
+            image: "/assets/mario.png",
             body: "Ett litet projekt för att testa på spelutveckling i mycket liten skala. Alla bilder är genererade i Midjourney.",
             tech: ["Javascript", "HTML", "Css"],
             github: "https://github.com/sofiaje/Mario",
@@ -55,6 +57,7 @@ const Root = () => {
         {
             path: "/projectSix",
             name: "Streak-Counter",
+            image: "/assets/count.png",
             body: "Mitt första react projekt",
             tech: ["React"],
             github: "https://github.com/sofiaje/streak-counter",
@@ -64,6 +67,7 @@ const Root = () => {
         {
             path: "/projectSeven",
             name: "Todo list",
+            image: "/assets/todo.png",
             body: "Klassisk nybörjar-app i React, med minimalistisk design.",
             tech: ["React", "Css", "Flexbox"],
             github: "https://github.com/sofiaje/todoRe",

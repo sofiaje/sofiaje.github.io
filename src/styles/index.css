@@ -1,44 +1,51 @@
 :root {
-  --backgroundColor: #054e5e;
+  --backgroundColor: rgb(249, 249, 249);
 
-  --headerColor: var(--backgroundColor);
+  --headerColor: #054e5e;
   --headerTextColor: var(--light);
   
+  --heroSection: #054e5e;
+  --heroSection: linear-gradient(0deg,rgb(14,116,137) 0%,rgb(5,78,94) 91%);;
+  --heroHeadingColor: var(--light);
+  --heroBtn: var(--light);
+
+  --btnColorPrime: rgb(6, 159, 186);
+  --btnTextColorPrime: var(--light);
+
   --footerColor: rgba(228, 228, 228, 0);
-  --footerTextColor: var(--dark);
+  --footerTextColor: var(--prime);
 
-  --heroBtn: white;
+  --aboutCards: rgb(255, 255, 255);
+
+  --overlayImg: rgba(228, 228, 228, 0.844);
+  --overlayText: var(--dark);
   
-
   --boxShadow: 0px 0px 15px rgb(52, 125, 125);
-
+  
   --accentColor: rgb(219, 219, 219);
 
   --headingColor: var(--dark);
   --textColor: var(--dark);
   --linkColor: var(--dark);
-  --navLinkColor: var(--light);
   --linkHover: grey;
 
 
   /* btns */
-
   --btnColor: rgba(0, 0, 0, 0);
-  --btnActiveColor: rgb(7, 151, 177);
+  --btnActiveColor: rgb(6, 159, 186);
   --btnTextColor: var(--dark);
   --btnBorder: var(--dark);
   
-  --btnColorPrime: rgb(6, 159, 186);
-  --btnTextColorPrime: var(--light);
 
-  --light: #f3f3f3;
+  --light: rgb(225, 225, 225);
   --dark: rgb(35, 35, 35);
+  --prime: #054e5e;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: rgb(248, 248, 248);
+  background-color: var(--backgroundColor);
 }
 

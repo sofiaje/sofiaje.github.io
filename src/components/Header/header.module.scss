@@ -21,16 +21,16 @@ header {
       margin-right: 1rem;
     }
     nav a {
-      color: var(--navLinkColor);
+      color: var(--headerTextColor);
       text-decoration: none;
       cursor: pointer;
       padding: 0.5rem 0.2rem;
     }
     nav a:hover {
-      border-bottom: 2px solid var(--navLinkColor);
+      border-bottom: 2px solid var(--headerTextColor);
     }
     .active {
-      border-bottom: 2px solid var(--navLinkColor);
+      border-bottom: 2px solid var(--headerTextColor);
     } 
   }
   
