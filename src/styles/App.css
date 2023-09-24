@@ -11,14 +11,13 @@
 }
 
 .contentWrapper {
-  padding: 1rem;
   max-width: 1200px;
   margin: auto;
   flex-grow: 1;
 }
 section {
   margin-top: 0rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 main {
@@ -78,28 +77,32 @@ h3 {
   background-color: var(--btnColorPrime);
   border: 1.5px solid var(--btnColorPrime);
   color: var(--btnTextColorPrime);
+  &:hover {
+    color: white;
+  }
 }
 
 .btn.heroBtn {
   border-color: var(--heroBtn);
   color: var(--heroBtn);
+  
 }
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.2rem;
 }
 
 img {
   width: 100%;
-  max-width: 700px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
 }
 
-span.technologies {
-  display: inline-block;
-  background-color: var(--prime);
-  color: white;
-  padding: 0.2rem 0.4rem;
+.py1 {
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+.px1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

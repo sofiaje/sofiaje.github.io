@@ -1,3 +1,4 @@
+import classes from "./project.module.scss"
 import { motion as m } from "framer-motion";
 import { useOutletContext, useParams } from "react-router-dom";
 
@@ -9,11 +10,11 @@ const Oneproject = () => {
 
     return (
         <section>
-            <div className="contentWrapper">
+            <div className="contentWrapper py1 px1">
                 {/* <m.div initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} > */}
                 <m.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>
 
-                    {image && <img src={image}></img>}
+                    {image && <img src={image} className={classes.projectImg}></img>}
 
                     <m.h3 initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} >{name}</m.h3>
                     <m.div initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} >
@@ -26,7 +27,7 @@ const Oneproject = () => {
                         </p>
                         <h3>Tekniker</h3>
                         <p className="flex">
-                            {tech.map(x => (<span className="technologies" key={x}>{x}</span>))}
+                            {tech.map(x => (<span className={classes.technologies} key={x}>{x}</span>))}
                         </p>
                     </m.div>
 

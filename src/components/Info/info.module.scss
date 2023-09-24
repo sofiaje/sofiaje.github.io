@@ -1,17 +1,14 @@
 #info {
     padding: 2rem 0;
-    color: var(--headerTextColor);   
+    color: var(--heroHeadingColor);   
     background: #000000;
     background: var(--heroSection);
+    background: url("/assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
     min-height: 55vh;
     // border-bottom: 3px solid;
     // box-shadow: 0 0 15px 10px rgb(221, 221, 221);
-    h1 {
-        color: var(--heroHeadingColor);
-        margin: 1.5rem 0;
-        letter-spacing: -5px;
-        line-height: 1.1;
-    }
 }
 .flexWrapper {
     max-width: 1200px;
@@ -27,8 +24,8 @@
     padding: 1.2rem;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    @media (width >= 600px){
-        max-width: 50%;
+    @media (width >= 700px){
+        max-width: 45%;
     }
     @media (width >= 1000px){
         max-width: 28%;
@@ -48,15 +45,17 @@
 .heroHeading {
     font-size: 4rem;
     letter-spacing: -2px;
-    color: var(--headerTextColor);
-    
+    color: var(--heroHeadingColor);
+    margin: 1.5rem 0;
+    letter-spacing: -4px;
+    line-height: 1.2;
     @media (width >= 400px){
         font-size: 6rem;
     }
 }
 
 .heroText {
-    color: var(--headerTextColor);
+    color: var(--heroText);
     font-size: 1.2rem;
 }
 

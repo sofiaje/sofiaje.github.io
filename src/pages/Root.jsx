@@ -5,26 +5,8 @@ import Header from "../components/Header/Header";
 const Root = () => {
 
     const projects = [
-        {
-            path: "/projectOne",
-            name: "Star wars Trivia",
-            image: "/assets/star.png",
-            body: "Ett Star Wars projekt som tillåter användaren att jämnföra olika karaktärer från filmerna. Projektet använder SWAPI, ett något långsamt Star Wars Trivia API.",
-            tech: ["Javascript", "HTML", "Css", "Flexbox"],
-            github: "https://github.com/sofiaje/star-wars",
-            webpage: "https://sofiaje.github.io/star-wars/",
-            id: 0
-        },
-        {
-            path: "/projectTwo",
-            name: "Knuten Keramikverkstad",
-            image: "/assets/knuten.png",
-            body: "Slutprojekt för kursen HTML och CSS. En hemsida för en fiktiv keramikstudio i Stockholm.",
-            tech: ["HTML", "Css", "Flexbox"],
-            github: "https://github.com/sofiaje/project",
-            webpage: "https://sofiaje.github.io/project/",
-            id: 1
-        },
+     
+        
         {
             path: "/projectThree",
             name: "LitRate",
@@ -33,7 +15,17 @@ const Root = () => {
             tech: ["Strapi", "Javascript", "Scss", "Flexbox"],
             github: "https://github.com/sofiaje/BookApp",
             webpage: null,
-            id: 2
+            id: 0
+        },
+        {
+            path: "/projectOne",
+            name: "Star wars Trivia",
+            image: "/assets/star.png",
+            body: "Ett Star Wars projekt som tillåter användaren att jämnföra olika karaktärer från filmerna. Projektet använder SWAPI, ett något långsamt Star Wars Trivia API.",
+            tech: ["Javascript", "HTML", "Css", "Flexbox"],
+            github: "https://github.com/sofiaje/star-wars",
+            webpage: "https://sofiaje.github.io/star-wars/",
+            id: 1
         },
         {
             path: "/projectFour",
@@ -43,8 +35,21 @@ const Root = () => {
             tech: ["Javascript", "HTML", "Css"],
             github: "https://github.com/sofiaje/Mario",
             webpage: "https://sofiaje.github.io/Mario",
+            id: 2
+        },
+       
+        {
+            path: "/projectTwo",
+            name: "Knuten Keramikverkstad",
+            image: "/assets/knuten.png",
+            body: "Slutprojekt för kursen HTML och CSS. En hemsida för en fiktiv keramikstudio i Stockholm.",
+            tech: ["HTML", "Css", "Flexbox"],
+            github: "https://github.com/sofiaje/project",
+            webpage: "https://sofiaje.github.io/project/",
             id: 3
         },
+    
+        
         {
             path: "/projectFive",
             name: "React Forum",

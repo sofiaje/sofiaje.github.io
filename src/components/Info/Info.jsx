@@ -7,13 +7,13 @@ const Info = () => {
         <>
 
             <section id={classes.info}>
-                <div className="contentWrapper">
+                <div className="contentWrapper px1 py1">
                     <div className={classes.flexHero}>
                         <div>
-                            <m.div>
+                            <div>
                                 <m.h1 className={classes.heroHeading} initial={{opacity: 0, y: -200}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Frontend Developer</m.h1>
                                 <m.p className={classes.heroText} initial={{opacity: 0, y: -100}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Kreativ och nyfiken student med känsla för färg och form. Går just nu mitt andra år på Frontend programmet på Nackademin i Stockholm.</m.p>
-                            </m.div>
+                            </div>
                             <div className={classes.btnContainer}>
                                 <NavLink className="primaryBtn btn" to="/contact">Contact me</NavLink>
                                 <NavLink className="btn heroBtn" to="/projects">Portfolio</NavLink>
@@ -22,8 +22,7 @@ const Info = () => {
                     </div>
                 </div>
             </section>
-            <section>
-                
+            <section className="py1">
                 <div className={classes.flexWrapper}>
                     <m.div initial={{ y: 50}} whileInView={{ y: 0}} transition={{ duration: 0.75, ease: "easeOut" }}>
                         <h3>Om mig</h3>

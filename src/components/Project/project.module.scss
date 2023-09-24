@@ -1,19 +1,40 @@
-.projectContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: flex-start;
+
+#project {
+  background-color: blue;
 }
-.projectCard {
-  box-sizing: border-box;
-  // box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+.projectContainer {
+  margin: auto;
+  @media (width >= 850px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0;
+  }
+}
+.productCard {
+  position: relative;
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+  min-height: 400px;
+  min-width: 350px;
+
+  @media (width >= 850px) {
+    min-width: 380px;
+  }
 }
 
+.portfolioCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+}
 
 .overlay {
   position: absolute;
-  align-items: center;
+  display: -webkit-flex; /* Use -webkit- prefix for older Safari versions */
   display: flex;
+  -webkit-flex-direction: column; /* Use -webkit- prefix for older Safari versions */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -21,7 +42,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--overlayImg); /* Adjust the alpha (0.5) to control darkness */
+  background-color: var(--overlayImg);
+  -webkit-backdrop-filter: blur(5px); /* Use -webkit- prefix for older Safari versions */
   backdrop-filter: blur(5px);
   overflow: hidden;
   transition: 0.5s ease-in-out;
@@ -36,7 +58,7 @@
   }
   &:hover{
     backdrop-filter: blur(1px);
-    // background-color: rgba(255, 255, 255, 0.729); /* Adjust the alpha (0.5) to control darkness */
+    background-color: var(--overlayImgHover);
   }
   &:hover svg {
     opacity: 1;
@@ -45,12 +67,17 @@
 .hidden {
   display: hidden;
 }
-.fakeImage {
-  width: 100%;
-  background-color: rgb(228, 228, 228);
-  min-height: 450px;
-  min-width: 350px;
-  @media (width >= 520px) {
-    min-width: 500px;
-  }
+
+
+span.technologies {
+  display: inline-block;
+  background-color: var(--dark);
+  border-radius: 4px;
+  color: white;
+  padding: 0.2rem 0.4rem;
+}
+
+.projectImg {
+  max-width: 700px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
