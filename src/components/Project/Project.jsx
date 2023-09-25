@@ -1,6 +1,6 @@
+import classes from "./project.module.scss"
 import { Link } from "react-router-dom";
 import { motion as m } from "framer-motion";
-import classes from "./project.module.scss"
 import { useOutletContext } from "react-router-dom";
 
 // images
@@ -14,13 +14,13 @@ const Project = () => {
         <section id="project">
             <div className="contentWrapper">
                 <m.div className={classes.projectContainer} initial={{ y: 50 }} animate={{ y: 10 }} transition={{ duration: 0.5, ease: "easeInOut" }}>
-                    <div>
+                    {/* <div>
                         <div className={classes.productCard}>
                             <div className={classes.overlay} style={{backgroundColor: "black", color: "white"}}>
                                 <h3 style={{color:"white"}}>Portfolio</h3>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {projects.map(link => (
                         <Link key={link.id} to={`/projects/${link.id}`}>
                             {/* <m.div className={classes.projectCard} initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}> */}

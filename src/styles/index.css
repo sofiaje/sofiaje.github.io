@@ -41,6 +41,7 @@
   --light: rgb(249, 249, 249);
   --dark: rgb(35, 35, 35);
   --prime: #e3bd6b;
+  --primeDark: #c98900;
 }
 
 body {

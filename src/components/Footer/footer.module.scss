@@ -2,16 +2,16 @@ footer {
     background-color: var(--footerColor);
     color: var(--footerTextColor);
     padding: 1rem;
-}
-footer > h2 {
-    color: var(--footerTextColor);
-}
-svg {
-    fill: var(--footerTextColor);
-}
-.flexFooter {
-    display: flex;
-    gap: 2rem;
-    justify-content: flex-end;
-    margin-right: 1rem;
+    svg {
+        fill: var(--footerTextColor);
+    }
+    h2 {
+        color: var(--footerTextColor);
+    }
+    .flex {
+        display: flex;
+        gap: 2rem;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
 }

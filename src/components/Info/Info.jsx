@@ -1,11 +1,14 @@
+import classes from "./info.module.scss"
 import { NavLink } from "react-router-dom";
 import { motion as m } from "framer-motion";
-import classes from "./info.module.scss"
+import { useOutletContext } from "react-router-dom";
+
 
 const Info = () => {
+    let { firstPageInfo } = useOutletContext();
+
     return (
         <>
-
             <section id={classes.info}>
                 <div className="contentWrapper px1 py1">
                     <div className={classes.flexHero}>
@@ -24,20 +27,12 @@ const Info = () => {
             </section>
             <section className="py1">
                 <div className={classes.flexWrapper}>
-                    <m.div initial={{ y: 50}} whileInView={{ y: 0}} transition={{ duration: 0.75, ease: "easeOut" }}>
-                        <h3>Om mig</h3>
-                        <p>En positiv, ansvarstagande och nyfiken människa med ett stort intresse för kommunikation och problemlösning.</p>
-                    </m.div>
-
-                    <m.div initial={{ y: 50 }} whileInView={{ y: 0}} transition={{ duration: 0.75, ease: "easeOut" }}>
-                        <h3>Intresset</h3>
-                        <p>Mitt intresse för kod startade i början av 2000-talet med olika sociala communitys där man hade egna sidor att jobba med. Verktygen var då ganska begränsande men det fanns en utmaning i det som lockade mig.</p>
-                    </m.div>
-
-                    <m.div initial={{ y: 50 }} whileInView={{ y: 0}} transition={{ duration: 0.75, ease: "easeOut" }}>
-                        <h3>Varför kod?</h3>
-                        <p>Jag uppskattar det direkta i kodskrivandet - att resultaten kommer snabbt men också att det finns hundra sätt att skriva en kod på, man får göra sin egen grej!</p>
-                    </m.div>
+                    {firstPageInfo.map(info => (
+                        <m.div initial={{ y: 50}} whileInView={{ y: 0}} transition={{ duration: 0.75, ease: "easeOut" }}>
+                            <h3>{info.title} </h3>
+                            <p>{info.body}</p>
+                        </m.div>
+                    ))}
                 </div>
             </section >
         </>
