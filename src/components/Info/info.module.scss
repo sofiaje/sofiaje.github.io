@@ -6,7 +6,9 @@
     background: url("/assets/bg.jpg");
     background-position: center;
     background-size: cover;
-    min-height: 60vh;
+    height: 60vh;
+    min-height: 400px;
+    max-height: 500px;
     // border-bottom: 3px solid;
     // box-shadow: 0 0 15px 10px rgb(221, 221, 221);
 }

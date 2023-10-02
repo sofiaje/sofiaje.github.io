@@ -19,7 +19,6 @@ const Contact = () => {
                         
 
                 </div>
-                <img src="/assets/blur.png" className={classes.contactImg} alt="" />
             </div>
         </section>
      );
