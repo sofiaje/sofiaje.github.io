@@ -1,7 +1,16 @@
 /*--------- Universal styling -------- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@100;300;400;700&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&family=Outfit:wght@200;300;400;500&display=swap');
 
+body {
+  margin: 0;
+  padding:0;
+  background: url("/assets/mont.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: fixed;
+  background-size: cover;
 
+}
 .pageWrapper {
   display: flex;
   flex-direction: column;
@@ -9,23 +18,13 @@
   color: var(--textColor);
   scroll-behavior: smooth;
 }
-
 .contentWrapper {
   max-width: 1200px;
-  margin: auto;
-  flex-grow: 1;
-}
-section {
-  margin-top: 0rem;
-  /* padding-top: 2rem; */
-}
-
-main {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-  flex-grow: 1;
+  margin: 0 auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 ul {
   list-style: none;
@@ -44,17 +43,22 @@ p {
 
 h1, h2, h3, h4, h5{
   color: var(--headingColor);
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  padding: 1rem 0;
 }
 h2 {
   font-size: 1.8rem;
 }
 h3 {
   font-size: 1.4rem;
-  
 }
 
+.grow {
+  flex-grow: 1;
+}
 /* buttons */
 
 .btn {
@@ -90,11 +94,6 @@ h3 {
   
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.2rem;
-}
 
 img {
   width: 100%;
@@ -108,3 +107,41 @@ img {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  background-color: var(--headerColor);
+  z-index: 1;
+  color: var(--headerTextColor);
+
+  h1 {
+    font-size: large;
+    color: var(--headerTextColor);
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    margin-right: 1rem;
+  }
+  nav a {
+    color: var(--headerTextColor);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5rem 0.2rem;
+  }
+  nav a:hover {
+    border-bottom: 2px solid var(--headerTextColor);
+  }
+  .active {
+    border-bottom: 2px solid var(--headerTextColor);
+  } 
+}
+
+  

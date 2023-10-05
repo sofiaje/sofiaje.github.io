@@ -1,83 +1,71 @@
+.project {
+  padding: 4rem 1rem;  
+  h2 {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  @media (width >= 600px) {
+    padding: 9rem 0;
+  }
+}
 .projectContainer {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   @media (width >= 850px) {
     display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 0;
   }
 }
-.productCard {
-  position: relative;
-  background-color: rgb(228, 228, 228);
-  width: 100%;
-  min-height: 400px;
-  min-width: 350px;
-
-  @media (width >= 850px) {
-    min-width: 380px;
-  }
-}
-
-.portfolioCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(17, 17, 17);
-}
-
-.overlay {
-  position: absolute;
-  display: -webkit-flex; /* Use -webkit- prefix for older Safari versions */
-  display: flex;
-  -webkit-flex-direction: column; /* Use -webkit- prefix for older Safari versions */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--overlayImg);
-  -webkit-backdrop-filter: blur(5px); /* Use -webkit- prefix for older Safari versions */
-  backdrop-filter: blur(5px);
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-  svg {
-    transition: 0.5s ease-in-out;
-    opacity: 0;
-    fill: var(--overlayText);
-  }
-  h3 {
-    color: var(--overlayText);
-    font-weight: 300;
-  }
-  &:hover{
-    backdrop-filter: blur(1px);
-    background-color: var(--overlayImgHover);
-  }
-  &:hover svg {
-    opacity: 1;
-  }
-}
-.hidden {
-  display: hidden;
-}
-
-.linkContainer{
+.projectcard {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 1px solid rgb(169, 93, 93);
+  background: var(--projectCardBg);
+  width: 90%;
+  & > div {
+    padding: 1rem;
+  }
+  @media (width >= 600px){
+   max-width: 380px;
+  }
+  img {
+    border-radius: 12px 12px 0 0;
+    height: 0px;
+  }
 }
+
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 span.technologies {
   display: inline-block;
-  background-color: var(--primeDark);
+  border:1px solid white;
   border-radius: 4px;
   color: white;
   padding: 0.2rem 0.4rem;
 }
 
-.projectImg {
-  max-width: 700px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+.linkContainer {
+  display: flex;
+  gap:1rem;
+  a{
+    color: rgb(240, 176, 176);
+    &:hover {
+      color: rgb(224, 149, 149);
+
+    }
+  }
 }
+

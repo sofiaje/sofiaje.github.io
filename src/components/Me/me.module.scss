@@ -1,0 +1,13 @@
+.wrapper {
+    padding: 2rem 0;
+    background-color: var(--backgroundColor);
+    box-shadow: 0 0 200px 160px var(--backgroundColor);
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media (width >= 700px) {
+        flex-direction: row;
+    }
+}

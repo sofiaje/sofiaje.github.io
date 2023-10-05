@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@100;300;400;700&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
+:root {
+  --backgroundColor: rgb(67, 33, 53);
+
+  --headerColor: rgb(249, 249, 249);
+  --headerTextColor: rgb(169, 93, 93);
+  
+  --heroHeadingColor: var(--light);
+  --heroText: var(--light);
+  --heroBtn: var(--light);
+
+  --btnColorPrime: rgb(255, 255, 255);
+  --btnTextColorPrime: var(--light);
+
+  --footerColor: rgba(228, 228, 228, 0);
+  --footerTextColor: var(--prime);
+
+  --aboutCards: rgba(72, 34, 51, 0.778);
+  --aboutCardsText: var(--light);
+
+  --projectCardBg: linear-gradient(rgba(169, 93, 93, 0.974), rgb(67, 33, 53));
+
+  --projectCardText: var(--light);
+  
+  --boxShadow: 0px 0px 10px rgb(169, 93, 93);
+  
+  --accentColor: rgb(219, 219, 219);
+
+  --headingColor: var(--light);
+  --textColor: var(--light);
+  --linkColor: var(--light);
+  --linkHover: grey;
+
+
+  /* btns */
+  --btnColor: rgba(0, 0, 0, 0);
+  --btnActiveColor: rgb(79, 53, 97);
+  --btnTextColor: var(--light);
+  --btnBorder: var(--light);
+  
+
+  --light: rgb(249, 249, 249);
+  --dark: rgb(35, 35, 35);
+  --prime: white;
+  --primeDark: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--backgroundColor);
+  color: white;
+}
+

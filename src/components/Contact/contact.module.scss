@@ -1,12 +1,11 @@
-.contactImg {
-    max-width: 400px;
-    max-height: 300px;
-  }
-
-.flex {
+.wrapper {
+  background-color: var(--backgroundColor);
+  box-shadow: 0 0 100px 160px var(--backgroundColor);
+  padding: 2rem 0;
   display: flex;
-  gap: 1rem;
-  svg {
-    fill: var(--prime)
+  align-items: center;
+  margin: 3rem auto;
+  @media(width >= 500px) {
+    min-height: 600px;
   }
 }
