@@ -6,7 +6,7 @@
     background: transparent;
     text-align: center;
     
-    @media (width >= 450px){
+    @media (min-width: 450px){
         min-height: 600px;
         padding: 5rem 0;
     }
@@ -21,7 +21,7 @@
     gap: 1rem;
     padding: 1rem;
     margin: 0 auto;
-    @media (width >= 780px){
+    @media (min-width: 780px){
         justify-content: flex-start;
     }
 }
@@ -33,13 +33,16 @@
     border-radius: 12px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    @media (width >= 780px){
-        width: 42%;
+  
+    @media (min-width: 780px) {
+      width: 42%;
     }
-    @media (width >= 1150px){
-        width: 29%;
+  
+    @media (min-width: 1150px) {
+      width: 29%;
     }
-}
+  }
+  
 
 .heroHeading {
     letter-spacing: -2px;
@@ -50,7 +53,7 @@
 
 h1.heroHeading{
     font-size: 4rem;
-    @media (width >= 450px){
+    @media (min-width: 450px){
         letter-spacing: -4px;
         font-size: 6rem;
 
@@ -58,7 +61,7 @@ h1.heroHeading{
 }
 h2.heroHeading {
     font-size: 3rem;
-    @media (width >= 450px){
+    @media (min-width: 450px){
         font-size: 4rem;
     }
 }

@@ -4,21 +4,18 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("/assets/bg-small.jpg");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left top;
   background-attachment: fixed;
+  background-size: 100%;
+  background-image: url("/assets/bg-small.jpg");
+}
+
+@media (min-width: 600px) {
+  body {
   background-size: cover;
-  
-  @media (width >= 600px) {
-    background: url("/assets/mont.jpg");
-    background-position: left bottom;
-    background-attachment: fixed;
-    background-size: cover;
-    
-  } 
-
-
+  background-image: url("/assets/mont.jpg");
+  }
 }
 .pageWrapper {
   display: flex;
