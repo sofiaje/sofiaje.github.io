@@ -1,6 +1,6 @@
 .project {
   padding: 4rem 1rem;  
-  h2 {
+  :is(h2) {
     text-align: center;
     padding: 2rem 0;
   }

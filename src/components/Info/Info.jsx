@@ -6,11 +6,11 @@ const Info = ({firstPageInfo}) => {
 
     return (
         <>
-            <section id={classes.info}>
+            <section className={classes.info}>
                 <m.h1 className={classes.heroHeading} initial={{opacity: 0, y: -100}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>Hi, i'm Sofia</m.h1>
                 <m.h2 className={classes.heroHeading} initial={{opacity: 0, y: -100}} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>I'm a Frontend Developer</m.h2>
             </section>
-            <section className="py1">
+            <section>
                 <div className={classes.flexWrapper}>
                     {firstPageInfo.map((info, i) => (
                         <m.div className={classes.card} key={i} initial={{ y: 50}} whileInView={{ y: 0}} transition={{ duration: 0.75, ease: "easeOut" }}>
