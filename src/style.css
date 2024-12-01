@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(18, 18, 18, 0.87);
+  background-color: #e0dddb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: "Forum", serif;
+}
+h2, h3, h4 {
+  font-family: "Forum", serif;
+}
+li {
+  list-style: none;
+}
+#app {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px){
+  #app {
+    flex-direction: row-reverse;
+  }
+}

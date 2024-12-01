@@ -1,10 +1,19 @@
 <script setup>
-import Home from '@/components/Home.vue'
+import { RouterView } from 'vue-router'
+import HomeView from '@/views/HomeView.vue'
+import Menu from '@/layout/Menu.vue'
 </script>
 
 <template>
-  <Home msg="Sofia Jespersen" />
+  <Menu /> 
+  <main>
+    <RouterView />
+  </main>
 </template>
 
+
 <style scoped>
+main {
+  width: 100%;
+}
 </style>
